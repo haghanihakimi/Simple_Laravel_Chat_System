@@ -1,0 +1,16 @@
+// Variables
+@import 'variables';
+@import 'mixs';
+
+html,body {
+    .m_Container {
+        .m_box {
+            .messages-panel {
+                .left-panel-viewer {
+                    @include cmax-size(fit-content,auto);
+                    
+                }
+            }
+        }
+    }
+}

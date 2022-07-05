@@ -1,0 +1,26 @@
+.footer-container {
+    background-color: #f7f7f7;
+    position: relative;
+    @include cmin-size(100%,auto);
+    @include cmin-size(100%,320px);
+    display: flex;
+    border-top: 1px solid hsla(250, 20%, 17%, 0.1);
+    .footer-box {
+        position: relative;
+        margin: 0 auto auto auto;
+        @include fsize;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        flex-wrap: wrap;
+        @include cmax-size(848px,auto);
+        .innerboxes {
+            @include cmin-size(260px,auto);
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            position: relative;
+            @include csize(fit-content,auto);
+        }
+    }
+}

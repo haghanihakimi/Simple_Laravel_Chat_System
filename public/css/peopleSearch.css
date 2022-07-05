@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list .people-names-holder span, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list .people-names-holder span, html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps form div input, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps form div input {
+  font-family: "Spline Sans", sans-serif;
+}
+
+/* Clouds */
+html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list .people-names-holder span, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list .people-names-holder span, html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps form div input, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps form div input {
+  font-family: "Spline Sans", sans-serif;
+}
+
+/* Clouds */
+html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: auto;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 60px 0 0 0;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps form, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 8px;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps form div, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps form div {
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps form div input, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps form div input {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  padding: 8px 48px 8px 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 8px 0 8px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  transition: all 120ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list:last-child, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list:last-child {
+  border: none;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list .people-avatar-holder, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list .people-avatar-holder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 32px;
+  max-height: 32px;
+  border-radius: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list .people-avatar-holder img, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list .people-avatar-holder img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 720px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list .people-names-holder, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list .people-names-holder {
+  position: relative;
+  width: 100%;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list .people-names-holder span, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list .people-names-holder span {
+  display: block;
+  margin: auto 0 auto 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #0a111c;
+  font-weight: 500;
+  padding: 0 8px 0 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .loadingPeople, body .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .loadingPeople {
+  opacity: 0.25;
+}

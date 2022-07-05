@@ -1,0 +1,132 @@
+// Variables
+@import 'variables';
+@import 'mixs';
+
+html,body {
+    .m_Container {
+        .m_box {
+            .messages-panel {
+                .right-panel-viewer {
+                    .profile-overview {
+                        position: relative;
+                        @include fsize;
+                        overflow: auto;
+                        overflow-x: hidden;
+                        .profile-pic-box {
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            @include csize(100%,auto);
+                            padding: 12px;
+                            .avatar-box {
+                                position: relative;
+                                margin: auto;
+                                border-radius: 720px;
+                                @include csize(fit-content,auto);
+                                @include cmax-size(auto,90px);
+                                img {
+                                    position: relative;
+                                    @include fsize;
+                                    object-fit: cover;
+                                    @include csize(100%,auto);
+                                    @include cmax-size(90px,auto);
+                                    border-radius: 720px;
+                                }
+                                span {
+                                    position: absolute;
+                                    @include csize(28px,28px);
+                                    bottom: -15px;
+                                    left: 50%;
+                                    @include translateX(-50%);
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    svg {
+                                        margin:auto;
+                                        @include csize(26px,26px);
+                                        position: relative;
+                                    }
+                                }
+                            }
+                        }
+                        .profile-name-box {
+                            position: relative;
+                            @include csize(100%,fit-content);
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            .profile-name {
+                                @extend %Signika;
+                                font-size: 18px;
+                                letter-spacing: 1.2px;
+                                font-weight: 600;
+                                text-align: center;
+                                padding: 12px;
+                                margin: 0 auto auto auto;
+                                overflow: hidden;
+                                word-break: break-all;
+                            }
+                        }
+                        .profile-btnEdit-box {
+                            position: relative;
+                            @include csize(100%,fit-content);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 2px 12px;
+                            @include user-select(none);
+                            .btnEdit {
+                                background-color: $blue;
+                                margin: auto;
+                                @include csize(fit-content,fit-content);
+                                display: inline-flex;
+                                padding: 8px;
+                                text-align: center;
+                                justify-content: center;
+                                align-items: center;
+                                @extend %Spline-Sans;
+                                font-size: 14px;
+                                letter-spacing: 1px;
+                                color: $body-bg;
+                                border-radius: 4px;
+                                border: none;
+                                cursor: pointer;
+                            }
+                        }
+                        .profile-user-descriptions {
+                            padding: 12px;
+                            display: inline-flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            @include csize(100%, fit-content);
+                            @extend %Spline-Sans;
+                            font-size: 15px;
+                            text-align: center;
+                            .profile-user-descTitle {
+                                text-align: center;
+                                padding: 8px;
+                                margin: auto;
+                                @include text-transform(capitalize);
+                                font-weight: 800;
+                                opacity: 0.7;
+                                letter-spacing: 1.5px;
+                            }
+                            .user-descriptions {
+                                text-align: center;
+                                letter-spacing: 1px;
+                                font-weight: 500;
+                                margin: auto;
+                                word-wrap: break-word;
+                                hyphens: auto;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

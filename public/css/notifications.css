@@ -1,0 +1,9 @@
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+/* Clouds */
+html .m_Container .m_box .messages-panel .left-panel-viewer, body .m_Container .m_box .messages-panel .left-panel-viewer {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-height: auto;
+}

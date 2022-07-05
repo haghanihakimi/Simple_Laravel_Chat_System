@@ -1,0 +1,510 @@
+// Variables
+@import 'variables';
+@import 'mixs';
+
+html,body {
+    #app {
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            z-index: 8;
+            @include fsize;
+            top: 0;
+            left: 0;
+            @include backblur(25px);
+            overflow: hidden;
+            @keyframes popsProfile {
+                0% {
+                    opacity: 0;
+                    @include scale(0.0,0.0);
+                }
+                50% {
+                    opacity: 0.5;
+                    @include scale(1.05, 1.05);
+                }
+                100% {
+                    opacity: 1;
+                    @include scale(1.0,1.0);
+                }
+            }
+            .profile-middlebox {
+                position: relative;
+                @include csize(100%,auto);
+                @include cmin-size(280px,auto);
+                @include cmax-size(512px,auto);
+                border-radius: 4px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 0;
+                @include animation (popsProfile,500ms,0ms,1,ease-in-out,alternate);
+                .ps {
+                    position: relative;
+                    @include csize(100%,auto);
+                    %inputs {
+                        @extend %Spline-Sans;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                        font-weight: 600;
+                        padding: 0 8px 0 8px;
+                        border-radius: 4px;
+                        @include csize(100%,24px);
+                        @include cmax-size(200px,auto);
+                        @include easings(120ms);
+                        &:focus {
+                            @include box-shadow(0px,0px,12px,-4px,$blue);
+                        }
+                        &:invalid:focus {
+                            @include box-shadow(0px,0px,12px,-4px,$red);
+                        }
+                        &:invalid {
+                            @include box-shadow(0px,0px,12px,-4px,$red);
+                        }
+                        &:-moz-submit-invalid {
+                            @include box-shadow(0px,0px,12px,-4px,$red);
+                        }
+                    }
+                    .profile-pic-box-holder {
+                        position: relative;
+                        padding: 16px;
+                        @include csize(100%,auto);
+                        display: flex;
+                        flex-direction: row;
+                        gap: 12px;
+                        .profile-pic-box {
+                            position: relative;
+                            @include csize(90px,90px);
+                            border-radius: 720px;
+                            padding: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            @include user-select(none);
+                            &:hover {
+                                .profile-pic-overlay-layer {
+                                    display: flex;
+                                }
+                            }
+                            .profile-pic-overlay-layer {
+                                background-color: hsla(250, 20%, 17%, 0.7);
+                                display: none;
+                                position: absolute;
+                                justify-content: center;
+                                align-items: center;
+                                top: 0;
+                                left: 0;
+                                @include fsize;
+                                z-index: 9;
+                                cursor: pointer;
+                                border-radius: 720px;
+                                span {
+                                    margin: auto;
+                                    font-size: 11px;
+                                    color: $body-bg;
+                                    @extend %Spline-Sans;
+                                }
+                            }
+                            img {
+                                position: absolute;
+                                @include fsize;
+                                margin: auto;
+                                object-fit: cover;
+                                border-radius: 720px;
+                            }
+                        }
+                        .profile-name-box {
+                            position: relative;
+                            margin: auto 0 auto 0;
+                            @include csize(fit-content,fit-content);
+                            display: flex;
+                            flex-direction: column;
+                            gap: 6px;
+                            input {
+                                @extend %inputs;
+                            }
+                        }
+                    }
+                    .sections-box {
+                        position: relative;
+                        padding: 12px;
+                        @include csize(100%,fit-content);
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        .section-title {
+                            padding: 8px;
+                            @extend %Spline-Sans;
+                            font-size: 16px;
+                            font-weight: 700px;
+                            letter-spacing: 1px;
+                        }
+                        .locked-account-box {
+                            display: block;
+                            position: relative;
+                            padding-top: 1px;
+                            padding-left: 40px;
+                            margin-bottom: 0;
+                            cursor: pointer;
+                            font-size: 14px;
+                            font-weight: 500;
+                            letter-spacing: 1.5px;
+                            @extend %Spline-Sans;
+                            @include user-select(none);
+                            input {
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                                height: 0;
+                                width: 0;
+                                &:checked ~ .checkmark {
+                                    &::after {
+                                        display: block;
+                                    }
+                                }
+                            }
+                            .checkmark {
+                                position: absolute;
+                                top: 1px;
+                                left: 12px;
+                                height: 20px;
+                                width: 20px;
+                                border-radius: 4px;
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    display: none;
+                                    left: 5.5px;
+                                    top: 1.5px;
+                                    width: 4px;
+                                    height: 8px;
+                                    border-width: 0 3px 3px 0;
+                                    @include rotate(45deg);
+                                }
+                            }
+                            a {
+                                text-decoration: none;
+                                display: inline-flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                @include csize(20px,20px);
+                                border-radius: 720px;
+                            }
+                        }
+                        .inputs-box {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 8px;
+                            @include csize(100%,fit-content);
+                            padding: 8px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            letter-spacing: 1px;
+                            align-items: center;
+                            justify-content: flex-start;
+                            @extend %Spline-Sans;
+                            label {
+                                button {
+                                    border: none;
+                                    cursor: pointer;
+                                    display: inline-block;
+                                    padding: 4px;
+                                    @include csize(auto,auto);
+                                    font-size: 12px;
+                                    background-color: transparent;
+                                    color: $blue;
+                                    font-weight: 600;
+                                    letter-spacing: 1px;
+                                    @extend %Spline-Sans;
+                                }
+                            }
+                            input {
+                                @extend %inputs;
+                                @include cmax-size(320px,auto);
+                            }
+                            input::-webkit-outer-spin-button,
+                            input::-webkit-inner-spin-button {
+                                -webkit-appearance: none;
+                                margin: 0;
+                            }
+                            input[type=number] {
+                                -moz-appearance:textfield;
+                            }
+                            select {
+                                @extend %inputs;
+                                cursor: pointer;
+                                @include text-transform(capitalize);
+                            }
+                            textarea {
+                                @extend %inputs;
+                                padding: 12px;
+                                @include cmin-size(100%,100px);
+                                resize: vertical !important;
+                                @include cmax-size(auto,360px);
+                                @include easings(0ms);
+                            }
+                        }
+                        .dob-box {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+                            justify-content: flex-start;
+                            align-items: center;
+                            label {
+                                @include csize(100%,auto);
+                                text-align: left;
+                                display: flex;
+                                flex-direction: row;
+                                gap: 24px;
+                            }
+                            span {
+                                @include csize(100%,auto);
+                                .vc-popover-content-wrapper {
+                                    .vc-popover-content {
+                                        border: none !important;
+                                        .vc-container {
+                                            .vc-popover-content-wrapper {
+                                                .vc-nav-popover-container {
+                                                    border: none !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .items-center {
+                                display: flex !important;
+                                flex-direction: row !important;
+                                align-items: center !important;
+                                justify-content: flex-start !important;
+                                text-align: left !important;
+                                margin-left: 0;
+                                gap: 4px;
+                                input {
+                                    @include csize(100%,32px);
+                                    margin-left: 0;
+                                }
+                                button {
+                                    background-color: transparent !important;
+                                    @include csize(32px !important,32px !important);
+                                    border-radius: 4;
+                                    border: none;
+                                    margin-left: 0;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    cursor: pointer;
+                                    svg {
+                                        position: relative;
+                                        @include csize(70%,70%);
+                                        * {
+                                            fill: #3182ce;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    * {
+                        .errors {
+                            font-size: 12px;
+                            @extend %Spline-Sans;
+                            font-weight: 500;
+                            color: $red;
+                            padding: 0;
+                            margin: 0;
+                            text-align: left;
+                            letter-spacing: 1px;
+                            @include csize(100%,auto);
+                            ul {
+                                list-style: none;
+                                padding: 0;
+                                margin: 0;
+                                li {
+                                    padding: 5px;
+                                    display: block;
+                                    margin: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+                form {
+                    position: relative;
+                    @include csize(100%,auto);
+                    display: flex;
+                    flex-direction: row;
+                    gap: 24px;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding: 12px;
+                    button {
+                        background-color: $blue;
+                        position: relative;
+                        @include csize(fit-content, fit-content);
+                        border-radius: 4px;
+                        letter-spacing: 1px;
+                        @extend %Spline-Sans;
+                        font-weight: 600;
+                        color: $body-bg;
+                        font-size: 16px;
+                        cursor: pointer;
+                        padding: 8px;
+                        border: 1px solid hsla(250, 20%, 17%, 0.1);
+                        &:first-child {
+                            background-color: $green;
+                        }
+                    }
+                    .buttonInactive {
+                        opacity: 0.25;
+                        cursor: default;
+                    }
+                    .buttonActive {
+                        opacity: 1.0;
+                        cursor: pointer;
+                    }
+                }
+                .updating-layer {
+                    position: absolute;
+                    @include fsize;
+                    display: flex;
+                    justify-content: center;
+                    align-items:center;
+                    top: 0;
+                    left: 0;
+                    padding: 0;
+                    border-radius: 4px;
+                    overflow: hidden;
+                    z-index: 9;
+                    strong {
+                        margin: auto;
+                        font-size: 24px;
+                        color: $blue;
+                        @include text-transform(uppercase);
+                        letter-spacing: 1px;
+                        @extend %Spline-Sans;
+                        @include user-select(none);
+                    }
+                }
+            }
+            .security__settings__save__alert {
+                background-color: hsla(210, 40%, 98%, 0.95);
+                position: fixed;
+                @include fsize;
+                z-index: 9;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include backblur(25px);
+                .security__settings__save {
+                    position: relative;
+                    display: block;
+                    @include csize(100%,auto);
+                    @include cmax-size(480px,auto);
+                    border-radius: 4px;
+                    border: 1px solid hsla(217, 47%, 7%, 0.1);
+                    form {
+                        position: relative;
+                        @include csize(100%,auto);
+                        .password__confirm__inputs {
+                            background-color: hsla(217, 47%, 7%, 0.0015);
+                            position: relative;
+                            @include csize(100%,auto);
+                            display: flex;
+                            flex-direction: column;
+                            gap: 16px;
+                            .form__title {
+                                background-color: #f2f5f8;
+                                border-top-right-radius: 4px;
+                                border-top-left-radius: 4px;
+                                border-bottom: 1px solid hsla(217, 47%, 7%, 0.1);
+                                font-size: 17px;
+                                padding: 12px;
+                                color: $black;
+                                font-weight: 500;
+                                letter-spacing: 1px;
+                                @extend %Spline-Sans;
+                            }
+                            .form__descriptions {
+                                font-size: 14px;
+                                padding: 0 8px 0 8px;
+                                color: $black;
+                                font-weight: 500;
+                                letter-spacing: 1px;
+                                @extend %Spline-Sans;
+                            }
+                            .form__buttons {
+                                padding: 0 8px 8px 8px;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 16px;
+                                input {
+                                    font-size: 15px;
+                                    color: $black;
+                                    font-weight: 500;
+                                    letter-spacing: 1px;
+                                    @extend %Spline-Sans;
+                                    padding: 8px;
+                                    border-radius: 4px;
+                                    border: 1px solid hsla(217, 47%, 7%, 0.07);
+                                }
+                                div {
+                                    padding: 0 8px 8px 8px;
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-flow: row wrap;
+                                    flex-wrap: wrap;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 12px;
+                                    button {
+                                        background-color: $blue;
+                                        padding: 8px;
+                                        text-align: center;
+                                        display: block;
+                                        @include csize(fit-content,auto);
+                                        @include cmax-size(160px,auto);
+                                        @include cmin-size(150px,auto);
+                                        border-radius: 4px;
+                                        color: $white;
+                                        font-size: 15px;
+                                        font-weight: 500;
+                                        letter-spacing: 1px;
+                                        @extend %Spline-Sans;
+                                        border: none;
+                                        cursor: pointer;
+                                        &:first-child {
+                                            background-color: $green;
+                                        }
+                                    }
+                                }
+                            }
+                            .response__box {
+                                letter-spacing: 1px;
+                                font-size: 15px;
+                                font-weight: 500;
+                                @extend %Spline-Sans;
+                                padding: 0 12px 12px 12px;
+                                text-align: left;
+                                @include csize(100%,auto);
+                                display: inline-block;
+                                .error {
+                                    color: $red;
+                                    display: inline-block;
+                                }
+                                .response {
+                                    color: $green;
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

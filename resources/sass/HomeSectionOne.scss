@@ -1,0 +1,96 @@
+.introduction-section {
+  @include fsize;
+  @include cmin-size(280px,480px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .intro-innerbox {
+    position: relative;
+    @include csize(100%,auto);
+    @include cmin-size(280px,480px);
+    @include cmax-size(1280px,auto);
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    .intro-smallboxes {
+      @include fsize;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include cmax-size(480px,480px);
+      @include cmin-size(280px,480px);
+      flex: 1;
+      flex-basis: 1;
+      .intro-childrenHolder {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        @include csize(auto,auto);
+        .intro-innerTitle {
+          padding: 12px;
+          text-align: center;
+          margin: auto auto 0 auto;
+          @extend %Signika;
+          letter-spacing: 1px;
+          color: $blue;
+          font-size: 36px;
+          line-height: 55px;
+          @include text-transform(uppercase);
+        }
+        .intro-innerSlogan {
+          margin: 0 auto 0 auto;
+          @extend %Signika;
+          font-size: 17px;
+          color: $black;
+          letter-spacing: 1px;
+          line-height: 30px;
+          text-align: center;
+          padding: 0 12px 12px 12px;
+        }
+        .intro-btnRedirections {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          gap: 16px;
+          flex-direction: row;
+          flex-flow: row wrap;
+          flex-wrap: wrap;
+          @include csize(100%,auto);
+          padding: 12px 0 12px 0;
+          margin-top: 0;
+          @include user-select(none);
+          a {
+            text-decoration: none;
+            padding: 12px;
+            text-align: center;
+            @extend %Spline-Sans;
+            letter-spacing: 2.5px;
+            @include text-transform(uppercase);
+            @include cmin-size(160px,auto);
+            border-radius: 4px;
+            font-weight: 700;
+            &:first-child {
+              background-color: $blue;
+              color: $white;
+            }
+            &:nth-child(2) {
+              background-color: $orange;
+              color: $black;
+            }
+          }
+        }
+      }
+      img {
+        margin: auto;
+        @include fsize;
+        @include cmax-size(380px,auto);
+        object-fit: cover;
+        filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.5));
+        -webkit-filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.5));
+      }
+    }
+  }
+}

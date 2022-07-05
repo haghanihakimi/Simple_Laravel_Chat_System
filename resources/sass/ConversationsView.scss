@@ -1,0 +1,169 @@
+// Variables
+@import 'variables';
+@import 'mixs';
+
+html,body {
+    .m_Container {
+        .m_box {
+            .messages-panel {
+                .left-panel-viewer {
+                    @include cmax-size(fit-content,auto);
+                    @keyframes loading {
+                        from {
+                            stroke-dasharray: 3000;
+                        }
+                        to {
+                            stroke-dasharray: 200;
+                        }
+                    }
+                    .conversations__view {
+                        position: relative;
+                        @include fsize;
+                        padding: 8px;
+                        .ps {
+                            position: relative;
+                            @include fsize;
+                            .loader {
+                                display: block;
+                                position: relative;
+                                @include csize(28px,28px);
+                                margin: auto;
+                                padding: 0;
+                                border-radius: 720px;
+                                @include rotate(0deg);
+                                svg {
+                                    margin: auto;
+                                    @include fsize;
+                                    position: relative;
+                                    @include rotate(270deg);
+                                    circle {
+                                        fill: none;
+                                        stroke-width: 60px;
+                                        stroke-dasharray: 200;
+                                        stroke-dashoffset: 3000;
+                                        @include animation (loading,2s,0ms,infinite,ease-in-out,alternate);
+                                    }
+                                }
+                            }
+                            .conversations__list {
+                                position: relative;
+                                padding: 0;
+                                list-style: none;
+                                @include user-select(none);
+                                li {
+                                    list-style: block;
+                                    padding: 0;
+                                    margin: 0 0 12px 0;
+                                    &:last-child {
+                                        margin: 0;
+                                    }
+                                    a {
+                                        text-decoration: none;
+                                        padding: 12px;
+                                        margin: 0;
+                                        display: block;
+                                        position: relative;
+                                        @include fsize;
+                                        @include easings(120ms);
+                                        border-radius: 4px;
+                                        .conversations__box {
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: center;
+                                            justify-content: space-around;
+                                            gap: 6px;
+                                            @include csize(100%,auto);
+                                            &:hover {
+                                                .rmv__conversation {
+                                                    display: flex;
+                                                }
+                                            }
+                                            .item__image {
+                                                position: relative;
+                                                @include csize(50px, 50px);
+                                                border-radius: 720px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                img {
+                                                    object-fit: cover;
+                                                    @include csize(50px, 50px);
+                                                    border-radius: 720px;
+                                                    margin: auto;
+                                                }
+                                            }
+                                            .item__info {
+                                                position: relative;
+                                                @include fsize;
+                                                span {
+                                                    font-size: 15px;
+                                                    letter-spacing: 1px;
+                                                    font-weight: 500;
+                                                    @extend %Spline-Sans;
+                                                }
+                                            }
+                                            .rmv__conversation {
+                                                display: none;
+                                                justify-content: center;
+                                                align-items: center;
+                                                position: relative;
+                                                @include csize(20px, 20px);
+                                                @include cmin-size(20px,20px);
+                                                margin: auto 0 auto auto;
+                                                border-radius: 4px;
+                                                cursor: pointer;
+                                                form {
+                                                    position: relative;
+                                                    @include fsize;
+                                                    button {
+                                                        position: relative;
+                                                        @include csize(20px,20px);
+                                                        @include cmax-size(20px,20px);
+                                                        border-radius: 4px;
+                                                        display: flex;
+                                                        border: none;
+                                                        margin: auto;
+                                                        cursor: pointer;
+                                                        @include easings(120ms);
+                                                        svg {
+                                                            position: relative;
+                                                            @include csize(11px,11px);
+                                                            @include cmax-size(11px,11px);
+                                                            margin: auto;
+                                                            @include easings(120ms);
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .empty__conversations {
+                                font-size: 17px;
+                                letter-spacing: 1px;
+                                color: $black;
+                                opacity: 0.75;
+                                @extend %Spline-Sans;
+                                padding: 8px;
+                                text-align: center;
+                                margin: auto;
+                                @include text-transform(capitalize);
+                            }
+                            .fade-move, .fade-enter-active, .fade-leave-active {
+                                transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+                            }
+                            .fade-enter-from, .fade-leave-to {
+                                opacity: 0;
+                                transform: scaleY(0.01) translate(30px, 0);
+                            }
+                            .fade-leave-active {
+                                position: absolute;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

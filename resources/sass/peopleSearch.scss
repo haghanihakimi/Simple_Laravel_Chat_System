@@ -1,0 +1,107 @@
+// Variables
+@import 'variables';
+@import 'mixs';
+
+// Variables
+@import 'variables';
+@import 'mixs';
+
+html,body {
+    .m_Container {
+        .m_box {
+            .messages-panel {
+                .left-panel-viewer {
+                    .searchbox-container {
+                        position: relative;
+                        @include fsize;
+                        overflow: hidden;
+                        @include cmax-size(100%,auto);
+                        .ps {
+                            overflow: auto;
+                            @include fsize;
+                            position: relative;
+                            padding: 60px 0 0 0;
+                            form {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                @include csize(100%,auto);
+                                padding: 8px;
+                                div {
+                                    position: relative;
+                                    @include csize(100%,fit-content);
+                                    input {
+                                        position: relative;
+                                        @include csize(100%,40px);
+                                        padding: 8px 48px 8px 8px;
+                                        border-radius: 4px;
+                                        font-size: 16px;
+                                        letter-spacing: 1px;
+                                        font-weight: 500;
+                                        @extend %Spline-Sans;
+                                    }
+                                }
+                            }
+                            .people-listbox {
+                                position: relative;
+                                @include csize(100%,auto);
+                                padding: 8px;
+                                @include user-select(none);
+                                .people-list {
+                                    position: relative;
+                                    @include csize(100%,auto);
+                                    padding: 8px 0 8px 0;
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: nowrap;
+                                    cursor: pointer;
+                                    @include easings(120ms);
+                                    &:last-child {
+                                        border: none;
+                                    }
+                                    .people-avatar-holder {
+                                        position: relative;
+                                        @include fsize;
+                                        @include cmax-size(32px,32px);
+                                        border-radius: 720px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        img {
+                                            position: relative;
+                                            @include fsize;
+                                            border-radius: 720px;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                    .people-names-holder {
+                                        position: relative;
+                                        @include csize(100%,32px);
+                                        display: flex;
+                                        align-items: center;
+                                        span {
+                                            display: block;
+                                            margin: auto 0 auto 0;
+                                            @extend %Spline-Sans;
+                                            font-size: 15px;
+                                            letter-spacing: 1px;
+                                            color: $black;
+                                            font-weight: 500;
+                                            padding: 0 8px 0 8px;
+                                            text-overflow: ellipsis;
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                        }
+                                    }
+                                }
+                            }
+                            .loadingPeople {
+                                opacity: 0.25;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,597 @@
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .response__box, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .response__box, html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons div button, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons div button, html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons input, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons input, html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__descriptions, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__descriptions, html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__title, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__title, html #app .profile-container .profile-middlebox .updating-layer strong, body #app .profile-container .profile-middlebox .updating-layer strong, html #app .profile-container .profile-middlebox form button, body #app .profile-container .profile-middlebox form button, html #app .profile-container .profile-middlebox .ps * .errors, body #app .profile-container .profile-middlebox .ps * .errors, html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box label button, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box label button, html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box, html #app .profile-container .profile-middlebox .ps .sections-box .locked-account-box, body #app .profile-container .profile-middlebox .ps .sections-box .locked-account-box, html #app .profile-container .profile-middlebox .ps .sections-box .section-title, body #app .profile-container .profile-middlebox .ps .sections-box .section-title, html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-pic-box .profile-pic-overlay-layer span, body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-pic-box .profile-pic-overlay-layer span, html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea, html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box select, html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input, html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input, html body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input, body html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box select, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input, body html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input, html body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input, body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input {
+  font-family: "Spline Sans", sans-serif;
+}
+
+/* Clouds */
+html #app .profile-container, body #app .profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(25px);
+  -moz-backdrop-filter: blur(25px);
+  -o-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  overflow: hidden;
+}
+@-webkit-keyframes popsProfile {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes popsProfile {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+html #app .profile-container .profile-middlebox, body #app .profile-container .profile-middlebox {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-width: 280px;
+  min-height: auto;
+  max-width: 512px;
+  max-height: auto;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0;
+  -webkit-animation: popsProfile 500ms ease-in-out 0ms 1 alternate;
+  animation: popsProfile 500ms ease-in-out 0ms 1 alternate;
+}
+html #app .profile-container .profile-middlebox .ps, body #app .profile-container .profile-middlebox .ps {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea, html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box select, html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input, html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input, html body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input, body html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box select, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input, body html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input, html body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input, body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 0 8px 0 8px;
+  border-radius: 4px;
+  width: 100%;
+  height: 24px;
+  max-width: 200px;
+  max-height: auto;
+  transition: all 120ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea:focus, html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box select:focus, html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input:focus, html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input:focus, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea:focus, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box select:focus, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input:focus, body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input:focus {
+  -o-box-shadow: 0px 0px 12px -4px #4563F7;
+  box-shadow: 0px 0px 12px -4px #4563F7;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea:invalid:focus, html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box select:invalid:focus, html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input:invalid:focus, html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input:invalid:focus, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea:invalid:focus, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box select:invalid:focus, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input:invalid:focus, body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input:invalid:focus {
+  -o-box-shadow: 0px 0px 12px -4px #e3342f;
+  box-shadow: 0px 0px 12px -4px #e3342f;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea:invalid, html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box select:invalid, html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input:invalid, html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input:invalid, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea:invalid, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box select:invalid, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input:invalid, body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input:invalid {
+  -o-box-shadow: 0px 0px 12px -4px #e3342f;
+  box-shadow: 0px 0px 12px -4px #e3342f;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea:-moz-submit-invalid, html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box select:-moz-submit-invalid, html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input:-moz-submit-invalid, html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input:-moz-submit-invalid, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea:-moz-submit-invalid, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box select:-moz-submit-invalid, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input:-moz-submit-invalid, body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input:-moz-submit-invalid {
+  -o-box-shadow: 0px 0px 12px -4px #e3342f;
+  box-shadow: 0px 0px 12px -4px #e3342f;
+}
+html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder, body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder {
+  position: relative;
+  padding: 16px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-pic-box, body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-pic-box {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 720px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-pic-box:hover .profile-pic-overlay-layer, body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-pic-box:hover .profile-pic-overlay-layer {
+  display: flex;
+}
+html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-pic-box .profile-pic-overlay-layer, body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-pic-box .profile-pic-overlay-layer {
+  background-color: rgba(38, 35, 52, 0.7);
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  cursor: pointer;
+  border-radius: 720px;
+}
+html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-pic-box .profile-pic-overlay-layer span, body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-pic-box .profile-pic-overlay-layer span {
+  margin: auto;
+  font-size: 11px;
+  color: #f8fafc;
+}
+html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-pic-box img, body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-pic-box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 720px;
+}
+html #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box, body #app .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box {
+  position: relative;
+  margin: auto 0 auto 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box, body #app .profile-container .profile-middlebox .ps .sections-box {
+  position: relative;
+  padding: 12px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .section-title, body #app .profile-container .profile-middlebox .ps .sections-box .section-title {
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 700px;
+  letter-spacing: 1px;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .locked-account-box, body #app .profile-container .profile-middlebox .ps .sections-box .locked-account-box {
+  display: block;
+  position: relative;
+  padding-top: 1px;
+  padding-left: 40px;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .locked-account-box input, body #app .profile-container .profile-middlebox .ps .sections-box .locked-account-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .locked-account-box input:checked ~ .checkmark::after, body #app .profile-container .profile-middlebox .ps .sections-box .locked-account-box input:checked ~ .checkmark::after {
+  display: block;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .locked-account-box .checkmark, body #app .profile-container .profile-middlebox .ps .sections-box .locked-account-box .checkmark {
+  position: absolute;
+  top: 1px;
+  left: 12px;
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .locked-account-box .checkmark::after, body #app .profile-container .profile-middlebox .ps .sections-box .locked-account-box .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5.5px;
+  top: 1.5px;
+  width: 4px;
+  height: 8px;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .locked-account-box a, body #app .profile-container .profile-middlebox .ps .sections-box .locked-account-box a {
+  text-decoration: none;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 720px;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: flex-start;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box label button, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box label button {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px;
+  width: auto;
+  height: auto;
+  font-size: 12px;
+  background-color: transparent;
+  color: #4563F7;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input {
+  max-width: 320px;
+  max-height: auto;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input::-webkit-outer-spin-button,
+html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input::-webkit-inner-spin-button, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input::-webkit-outer-spin-button,
+body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input[type=number], body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box input[type=number] {
+  -moz-appearance: textfield;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box select, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box select {
+  cursor: pointer;
+  -webkit-text-transform: capitalize;
+  -moz-text-transform: capitalize;
+  -o-text-transform: capitalize;
+  -ms-text-transform: capitalize;
+  text-transform: capitalize;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea, body #app .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea {
+  padding: 12px;
+  min-width: 100%;
+  min-height: 100px;
+  resize: vertical !important;
+  max-width: auto;
+  max-height: 360px;
+  transition: all 0ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .dob-box, body #app .profile-container .profile-middlebox .ps .sections-box .dob-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .dob-box label, body #app .profile-container .profile-middlebox .ps .sections-box .dob-box label {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .dob-box span, body #app .profile-container .profile-middlebox .ps .sections-box .dob-box span {
+  width: 100%;
+  height: auto;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .dob-box span .vc-popover-content-wrapper .vc-popover-content, body #app .profile-container .profile-middlebox .ps .sections-box .dob-box span .vc-popover-content-wrapper .vc-popover-content {
+  border: none !important;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .dob-box span .vc-popover-content-wrapper .vc-popover-content .vc-container .vc-popover-content-wrapper .vc-nav-popover-container, body #app .profile-container .profile-middlebox .ps .sections-box .dob-box span .vc-popover-content-wrapper .vc-popover-content .vc-container .vc-popover-content-wrapper .vc-nav-popover-container {
+  border: none !important;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .dob-box .items-center, body #app .profile-container .profile-middlebox .ps .sections-box .dob-box .items-center {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+  margin-left: 0;
+  gap: 4px;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .dob-box .items-center input, body #app .profile-container .profile-middlebox .ps .sections-box .dob-box .items-center input {
+  width: 100%;
+  height: 32px;
+  margin-left: 0;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .dob-box .items-center button, body #app .profile-container .profile-middlebox .ps .sections-box .dob-box .items-center button {
+  background-color: transparent !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 4;
+  border: none;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .dob-box .items-center button svg, body #app .profile-container .profile-middlebox .ps .sections-box .dob-box .items-center button svg {
+  position: relative;
+  width: 70%;
+  height: 70%;
+}
+html #app .profile-container .profile-middlebox .ps .sections-box .dob-box .items-center button svg *, body #app .profile-container .profile-middlebox .ps .sections-box .dob-box .items-center button svg * {
+  fill: #3182ce;
+}
+html #app .profile-container .profile-middlebox .ps * .errors, body #app .profile-container .profile-middlebox .ps * .errors {
+  font-size: 12px;
+  font-weight: 500;
+  color: #e3342f;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  letter-spacing: 1px;
+  width: 100%;
+  height: auto;
+}
+html #app .profile-container .profile-middlebox .ps * .errors ul, body #app .profile-container .profile-middlebox .ps * .errors ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+html #app .profile-container .profile-middlebox .ps * .errors ul li, body #app .profile-container .profile-middlebox .ps * .errors ul li {
+  padding: 5px;
+  display: block;
+  margin: auto;
+}
+html #app .profile-container .profile-middlebox form, body #app .profile-container .profile-middlebox form {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px;
+}
+html #app .profile-container .profile-middlebox form button, body #app .profile-container .profile-middlebox form button {
+  background-color: #4563F7;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #f8fafc;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px;
+  border: 1px solid rgba(38, 35, 52, 0.1);
+}
+html #app .profile-container .profile-middlebox form button:first-child, body #app .profile-container .profile-middlebox form button:first-child {
+  background-color: #0ea785;
+}
+html #app .profile-container .profile-middlebox form .buttonInactive, body #app .profile-container .profile-middlebox form .buttonInactive {
+  opacity: 0.25;
+  cursor: default;
+}
+html #app .profile-container .profile-middlebox form .buttonActive, body #app .profile-container .profile-middlebox form .buttonActive {
+  opacity: 1;
+  cursor: pointer;
+}
+html #app .profile-container .profile-middlebox .updating-layer, body #app .profile-container .profile-middlebox .updating-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 9;
+}
+html #app .profile-container .profile-middlebox .updating-layer strong, body #app .profile-container .profile-middlebox .updating-layer strong {
+  margin: auto;
+  font-size: 24px;
+  color: #4563F7;
+  -webkit-text-transform: uppercase;
+  -moz-text-transform: uppercase;
+  -o-text-transform: uppercase;
+  -ms-text-transform: uppercase;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+html #app .profile-container .security__settings__save__alert, body #app .profile-container .security__settings__save__alert {
+  background-color: rgba(248, 250, 252, 0.95);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(25px);
+  -moz-backdrop-filter: blur(25px);
+  -o-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+}
+html #app .profile-container .security__settings__save__alert .security__settings__save, body #app .profile-container .security__settings__save__alert .security__settings__save {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 480px;
+  max-height: auto;
+  border-radius: 4px;
+  border: 1px solid rgba(9, 16, 26, 0.1);
+}
+html #app .profile-container .security__settings__save__alert .security__settings__save form, body #app .profile-container .security__settings__save__alert .security__settings__save form {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs {
+  background-color: rgba(9, 16, 26, 0.0015);
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__title, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__title {
+  background-color: #f2f5f8;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom: 1px solid rgba(9, 16, 26, 0.1);
+  font-size: 17px;
+  padding: 12px;
+  color: #0a111c;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__descriptions, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__descriptions {
+  font-size: 14px;
+  padding: 0 8px 0 8px;
+  color: #0a111c;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons {
+  padding: 0 8px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons input, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons input {
+  font-size: 15px;
+  color: #0a111c;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(9, 16, 26, 0.07);
+}
+html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons div, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons div {
+  padding: 0 8px 8px 8px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons div button, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons div button {
+  background-color: #4563F7;
+  padding: 8px;
+  text-align: center;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  max-width: 160px;
+  max-height: auto;
+  min-width: 150px;
+  min-height: auto;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+}
+html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons div button:first-child, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons div button:first-child {
+  background-color: #0ea785;
+}
+html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .response__box, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .response__box {
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0 12px 12px 12px;
+  text-align: left;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .response__box .error, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .response__box .error {
+  color: #e3342f;
+  display: inline-block;
+}
+html #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .response__box .response, body #app .profile-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .response__box .response {
+  color: #0ea785;
+  display: inline-block;
+}

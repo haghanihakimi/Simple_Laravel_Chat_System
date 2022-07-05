@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+html .container .container-box .signup-container .signup-box .signup-form-container form button, body .container .container-box .signup-container .signup-box .signup-form-container form button, html .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs input, html .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs select, body .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs input, body .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs select {
+  font-family: "Spline Sans", sans-serif;
+}
+
+/* Clouds */
+html .container .container-box .signup-container, body .container .container-box .signup-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 36px 0 0 0;
+}
+html .container .container-box .signup-container .signup-box, body .container .container-box .signup-container .signup-box {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  min-width: 100%;
+  min-height: 720px;
+}
+html .container .container-box .signup-container .signup-box .signup-form-container, body .container .container-box .signup-container .signup-box .signup-form-container {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  min-width: 300px;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  flex-basis: 45%;
+}
+html .container .container-box .signup-container .signup-box .signup-form-container form, body .container .container-box .signup-container .signup-box .signup-form-container form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 412px;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  position: relative;
+  margin: auto;
+}
+html .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs, body .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  height: 50px;
+  min-width: 100px;
+  min-height: auto;
+  max-width: 412px;
+  max-height: auto;
+}
+html .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs input, html .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs select, body .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs input, body .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs select {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100%;
+  min-width: 200px;
+  min-height: auto;
+  flex: 1;
+  flex-basis: 1;
+  border-radius: 4px;
+  border: 1px solid rgba(38, 35, 52, 0.1);
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+  color: #0a111c;
+  transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  padding: 12px;
+}
+html .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs input:focus, html .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs select:focus, body .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs input:focus, body .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs select:focus {
+  background-color: #f8fafc;
+  -o-box-shadow: 0px 0px 15px -8px #4563F7;
+  box-shadow: 0px 0px 15px -8px #4563F7;
+}
+html .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs input:invalid:focus, html .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs select:invalid:focus, body .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs input:invalid:focus, body .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs select:invalid:focus {
+  -o-box-shadow: 0px 0px 15px -8px #e3342f;
+  box-shadow: 0px 0px 15px -8px #e3342f;
+}
+html .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs input:invalid, html .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs select:invalid, body .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs input:invalid, body .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs select:invalid {
+  -o-box-shadow: 0px 0px 15px -8px #e3342f;
+  box-shadow: 0px 0px 15px -8px #e3342f;
+}
+html .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs input:-moz-submit-invalid, html .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs select:-moz-submit-invalid, body .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs input:-moz-submit-invalid, body .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs select:-moz-submit-invalid {
+  -o-box-shadow: 0px 0px 15px -8px #e3342f;
+  box-shadow: 0px 0px 15px -8px #e3342f;
+}
+html .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs select, body .container .container-box .signup-container .signup-box .signup-form-container form .form-inputs select {
+  -webkit-text-transform: capitalize;
+  -moz-text-transform: capitalize;
+  -o-text-transform: capitalize;
+  -ms-text-transform: capitalize;
+  text-transform: capitalize;
+}
+html .container .container-box .signup-container .signup-box .signup-form-container form button, body .container .container-box .signup-container .signup-box .signup-form-container form button {
+  background-color: #4563F7;
+  position: relative;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  transition: all 150ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+html .container .container-box .signup-container .signup-box .signup-form-container form button:hover, body .container .container-box .signup-container .signup-box .signup-form-container form button:hover {
+  background-color: #5745f7;
+  color: #f8fafc;
+}
+html .container .container-box .signup-container .signup-box .signup-media-container, body .container .container-box .signup-container .signup-box .signup-media-container {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: 300px;
+  min-height: auto;
+  flex-basis: 55%;
+}
+html .container .container-box .signup-container .signup-box .signup-media-container img, body .container .container-box .signup-container .signup-box .signup-media-container img {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+@media only screen and (max-width: 1048px) {
+  html .container .container-box .signup-container .signup-box .signup-media-container, body .container .container-box .signup-container .signup-box .signup-media-container {
+    display: none;
+  }
+}

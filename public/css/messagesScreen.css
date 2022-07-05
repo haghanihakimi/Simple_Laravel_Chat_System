@@ -1,0 +1,438 @@
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+html .m_Container .m_box .messages-panel .middle-messages-viewer .profile-unavailability, body .m_Container .m_box .messages-panel .middle-messages-viewer .profile-unavailability, html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container .private-alert, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container .private-alert, html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form .messageBox, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form .messageBox, html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container .chat-bubble-box .chat-timestamps, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container .chat-bubble-box .chat-timestamps, html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container .chat-bubble-box .chat-bubble-contents, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container .chat-bubble-box .chat-bubble-contents, html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions .moreOptions form button, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions .moreOptions form button, html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box {
+  font-family: "Spline Sans", sans-serif;
+}
+
+/* Clouds */
+html .m_Container .m_box .messages-panel .middle-messages-viewer .profile-unavailability, body .m_Container .m_box .messages-panel .middle-messages-viewer .profile-unavailability, html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container .private-alert, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container .private-alert, html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form .messageBox, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form .messageBox, html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container .chat-bubble-box .chat-timestamps, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container .chat-bubble-box .chat-timestamps, html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container .chat-bubble-box .chat-bubble-contents, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container .chat-bubble-box .chat-bubble-contents, html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions .moreOptions form button, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions .moreOptions form button, html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box {
+  font-family: "Spline Sans", sans-serif;
+}
+
+/* Clouds */
+@-webkit-keyframes loading {
+  from {
+    stroke-dasharray: 3000;
+  }
+  to {
+    stroke-dasharray: 200;
+  }
+}
+@keyframes loading {
+  from {
+    stroke-dasharray: 3000;
+  }
+  to {
+    stroke-dasharray: 200;
+  }
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: auto;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading {
+  background-color: #f8fafc;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+  border-bottom: 1px solid rgba(22, 22, 29, 0.07);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px 0 24px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #0a111c;
+  font-weight: 600;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box span, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box span {
+  margin: auto;
+  display: inline-block;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box .locked, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box .locked {
+  background-position: center;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box .locked svg, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box .locked svg {
+  margin: auto;
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box .locked svg *, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box .locked svg * {
+  fill: #0ea785;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box .loader, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box .loader {
+  display: block;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  margin: auto;
+  padding: 0;
+  border-radius: 720px;
+  transform: rotate(0deg);
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box .loader svg, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box .loader svg {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: rotate(270deg);
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box .loader svg circle, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-username-box .loader svg circle {
+  fill: none;
+  stroke: #4563F7;
+  stroke-width: 60px;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 3000;
+  -webkit-animation: loading 2s ease-in-out 0ms infinite alternate;
+  animation: loading 2s ease-in-out 0ms infinite alternate;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 24px 0 0;
+  display: flex;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle button, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle button svg, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle button svg {
+  margin: auto;
+  position: relative;
+  width: 60%;
+  height: 60%;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle button svg *, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle button svg * {
+  fill: #4563F7;
+}
+@-webkit-keyframes toggleMoreOptions {
+  0% {
+    opacity: 0;
+    transform: scale(0.95, 0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes toggleMoreOptions {
+  0% {
+    opacity: 0;
+    transform: scale(0.95, 0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions {
+  background-color: #fbfbfb85;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  padding: 6px;
+  transform: scale(1, 1);
+  border-radius: 4px;
+  border: 1px solid rgba(22, 22, 29, 0.075);
+  width: auto;
+  height: auto;
+  -webkit-animation: toggleMoreOptions 100ms ease-in 0ms 1 alternate;
+  animation: toggleMoreOptions 100ms ease-in 0ms 1 alternate;
+  -o-box-shadow: -1px 0px 8px -5px rgba(38, 35, 52, 0.5);
+  box-shadow: -1px 0px 8px -5px rgba(38, 35, 52, 0.5);
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions .moreOptions, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions .moreOptions {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-width: 140px;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions .moreOptions form, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions .moreOptions form {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 0;
+  display: block;
+  transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  border-radius: 4px;
+  border-bottom: 1px solid rgba(248, 250, 252, 0.07);
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions .moreOptions form:last-child, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions .moreOptions form:last-child {
+  border: none;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions .moreOptions form:hover, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions .moreOptions form:hover {
+  background-color: #fff;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions .moreOptions form button, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .heading-moreOptions .moreOptions form button {
+  background-color: transparent;
+  min-width: auto;
+  min-height: auto;
+  display: block;
+  border-radius: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: #0a111c;
+  padding: 8px;
+  word-break: keep-all;
+  word-wrap: normal;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .activeMoreOptions, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .activeMoreOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  opacity: 1;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .inActiveMoreOptions, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .inActiveMoreOptions {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .loader, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .loader {
+  display: block;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  margin: auto;
+  padding: 0;
+  border-radius: 720px;
+  transform: rotate(0deg);
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .loader svg, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .loader svg {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: rotate(270deg);
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .loader svg circle, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-top-heading .heading-toolsToggle .loader svg circle {
+  fill: none;
+  stroke: #4563F7;
+  stroke-width: 60px;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 3000;
+  -webkit-animation: loading 2s ease-in-out 0ms infinite alternate;
+  animation: loading 2s ease-in-out 0ms infinite alternate;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 0 55px 0;
+  z-index: 0;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 12px;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container .chat-bubble-box, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container .chat-bubble-box {
+  background-color: #4563f7;
+  position: relative;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  max-width: 848px;
+  max-height: auto;
+  border-radius: 6px;
+  padding: 12px;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container .chat-bubble-box .chat-bubble-contents, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container .chat-bubble-box .chat-bubble-contents {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #ffffff;
+  width: 100%;
+  height: auto;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container .chat-bubble-box .chat-timestamps, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .chat-bubble-container .chat-bubble-box .chat-timestamps {
+  display: block;
+  margin: 6px 0 0 0;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #ffffff;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .sender, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .sender {
+  direction: rtl;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .receiver, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .ps .receiver {
+  direction: ltr;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container {
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  border-top: 1px solid rgba(9, 16, 27, 0.1);
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form {
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form .messageBox, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form .messageBox {
+  background-color: #ffffff;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 480px;
+  padding: 15px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #0a111c;
+  font-weight: 500;
+  border: none;
+  border-radius: 0;
+  overflow: auto;
+  overflow-x: hidden;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form .messageBox[contenteditable=true]:empty:before, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form .messageBox[contenteditable=true]:empty:before {
+  content: "Type message...";
+  color: grey;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form button, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form button {
+  background-color: transparent;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: flex;
+  margin: auto auto 0 auto;
+  border: none;
+  border-left: 1px solid rgba(9, 16, 27, 0.1);
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form button svg, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form button svg {
+  position: relative;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form button svg *, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container form button svg * {
+  fill: #4563F7;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container .private-alert, body .m_Container .m_box .messages-panel .middle-messages-viewer .messages-screen .ms-body-content .msg-textbox-container .private-alert {
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: rgba(9, 16, 26, 0.75);
+  font-weight: 600;
+  margin: auto;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .profile-unavailability, body .m_Container .m_box .messages-panel .middle-messages-viewer .profile-unavailability {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 50%;
+  padding: 16px;
+  text-align: center;
+  margin: auto;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #0a111c;
+  letter-spacing: 1.5px;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  border: 1px solid rgba(9, 16, 27, 0.1);
+  -o-box-shadow: 1px 0px 8px -5px rgba(38, 35, 52, 0.5);
+  box-shadow: 1px 0px 8px -5px rgba(38, 35, 52, 0.5);
+}
+html .m_Container .m_box .messages-panel .unavailable-page, body .m_Container .m_box .messages-panel .unavailable-page {
+  background-color: rgba(227, 54, 49, 0.05);
+}

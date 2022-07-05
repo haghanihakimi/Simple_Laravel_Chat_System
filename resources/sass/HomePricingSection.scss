@@ -1,0 +1,128 @@
+.pricing-section {
+  position: relative;
+  @include csize(100%,auto);
+  @include cmin-size(auto,480px);
+  .pricing-heading-title {
+    position: relative;
+    padding: 16px;
+    color: $black;
+    margin: auto auto 24px auto;
+    text-align: center;
+    @extend %Signika;
+    font-size: 28px;
+    letter-spacing: 1.2px;
+    @include text-transform(uppercase);
+  }
+  .pricing-innerChild {
+    position: relative;
+    @include csize(100%,auto);
+    @include cmin-size(280px,480px);
+    @include cmax-size(1280px,auto);
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    gap: 32px;
+    .pricing-vertical-cols {
+      background-color: $body-bg;
+      @include csize(100%,auto);
+      @include cmin-size(200px,480px);
+      @include cmax-size(300px,auto);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex: 1px;
+      flex-basis: 1;
+      padding: 12px;
+      border: 1px solid hsla(250, 20%, 17%, 0.2);
+      border-radius: 4px;
+      @include box-shadow(0px,0px,25px,-10px,rgba(38,35,53,0.5));
+      @include easings(500ms);
+      &:hover {
+        @include scale(1.01,1.01);
+      }
+      .column-price-heading {
+        background-color: #f3f3f3;
+        padding: 12px 12px 6px 12px;
+        text-align: center;
+        @extend %Spline-Sans;
+        letter-spacing: 1px;
+        font-weight: 700;
+        position: relative;
+        color: $blue;
+        @include text-transform(uppercase);
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+      }
+      .column-price-desc {
+        background-color: #f3f3f3;
+        display: block;
+        @include csize(100%,auto);
+        padding: 6px 16px 24px 16px;
+        text-align: center;
+        position: relative;
+        @extend %Spline-Sans;
+        font-weight: 600;
+        color: $blue;
+        letter-spacing: 1px;
+        @include text-transform(uppercase);
+        text-align: center;
+        font-size: 21px;
+        margin: 0 auto auto auto;
+        border-bottom: 1px solid hsla(250, 20%, 17%, 0.2);
+        span {
+          @include text-transform(lowercase);
+        }
+      }
+      .column-services-list {
+        @include csize(100%,auto);
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        position: relative;
+        justify-content: center;
+        ul {
+          list-style: none;
+          padding: 12px;
+          margin: auto;
+          li {
+            display: block;
+            padding: 12px;
+            margin: auto;
+            @include csize(fit-content,auto);
+            text-align: center;
+            @extend %Spline-Sans;
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            color: $black;
+            @include text-transform(capitalize);
+            span {
+              color: $green;
+            }
+          }
+        }
+      }
+      .column-service-subscribe {
+        background-color: $blue;
+        padding: 16px;
+        text-align: center;
+        text-decoration: none;
+        color: $white;
+        @include easings(500ms);
+        border-radius: 4px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        @extend %Spline-Sans;
+        display: block;
+        @include csize(100%,auto);
+        margin: auto auto 0 auto;
+        &:hover {
+          background-color: $warm-blue;
+          color: $body-bg;
+        }
+      }
+    }
+  }
+}

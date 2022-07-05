@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-user-descriptions, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-user-descriptions, html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-btnEdit-box .btnEdit, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-btnEdit-box .btnEdit {
+  font-family: "Spline Sans", sans-serif;
+}
+
+html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-name-box .profile-name, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-name-box .profile-name {
+  font-family: "Signika", sans-serif;
+}
+
+/* Clouds */
+html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-pic-box, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-pic-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 12px;
+}
+html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-pic-box .avatar-box, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-pic-box .avatar-box {
+  position: relative;
+  margin: auto;
+  border-radius: 720px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  max-width: auto;
+  max-height: 90px;
+}
+html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-pic-box .avatar-box img, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-pic-box .avatar-box img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-width: 90px;
+  max-height: auto;
+  border-radius: 720px;
+}
+html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-pic-box .avatar-box span, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-pic-box .avatar-box span {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-pic-box .avatar-box span svg, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-pic-box .avatar-box span svg {
+  margin: auto;
+  width: 26px;
+  height: 26px;
+  position: relative;
+}
+html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-name-box, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-name-box {
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-name-box .profile-name, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-name-box .profile-name {
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px;
+  margin: 0 auto auto auto;
+  overflow: hidden;
+  word-break: break-all;
+}
+html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-btnEdit-box, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-btnEdit-box {
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 12px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-btnEdit-box .btnEdit, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-btnEdit-box .btnEdit {
+  background-color: #4563F7;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: inline-flex;
+  padding: 8px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #f8fafc;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-user-descriptions, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-user-descriptions {
+  padding: 12px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 15px;
+  text-align: center;
+}
+html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-user-descriptions .profile-user-descTitle, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-user-descriptions .profile-user-descTitle {
+  text-align: center;
+  padding: 8px;
+  margin: auto;
+  -webkit-text-transform: capitalize;
+  -moz-text-transform: capitalize;
+  -o-text-transform: capitalize;
+  -ms-text-transform: capitalize;
+  text-transform: capitalize;
+  font-weight: 800;
+  opacity: 0.7;
+  letter-spacing: 1.5px;
+}
+html .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-user-descriptions .user-descriptions, body .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-user-descriptions .user-descriptions {
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: auto;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  line-height: 30px;
+}

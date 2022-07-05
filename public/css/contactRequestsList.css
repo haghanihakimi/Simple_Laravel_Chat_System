@@ -1,0 +1,279 @@
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .unavailability, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .unavailability, html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .contacts-loader-waiter, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .contacts-loader-waiter, html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form button, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form button, html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options a, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options a, html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-names span, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-names span, html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav li a, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav li a {
+  font-family: "Spline Sans", sans-serif;
+}
+
+/* Clouds */
+html .m_Container .m_box .messages-panel .left-panel-viewer, body .m_Container .m_box .messages-panel .left-panel-viewer {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-height: auto;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav {
+  padding: 0;
+  margin: auto;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav li, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav li {
+  display: inline-block;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav li a, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav li a {
+  text-decoration: none;
+  padding: 12px 8px 12px 8px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: auto;
+  text-align: center;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav li a:hover, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav li a:hover {
+  text-decoration: underline;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav li .active, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav li .active {
+  font-weight: bold;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 7px;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container:last-child, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container:last-child {
+  border: none;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder {
+  text-decoration: none;
+  width: 100%;
+  height: auto;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  border-radius: 4px;
+  transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder:hover, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder:hover {
+  background-color: rgba(22, 22, 29, 0.025);
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .profile-image, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .profile-image {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 70px;
+  max-height: 70px;
+  border-radius: 720px;
+  padding: 2px;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .profile-image img, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .profile-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 720px;
+  position: relative;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-names, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-names {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0;
+  align-items: center;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-names span, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-names span {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: auto auto auto 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 40px;
+  max-height: auto;
+  cursor: pointer;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box button, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box button {
+  background-color: transparent;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box button svg, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box button svg {
+  position: relative;
+  margin: auto;
+  width: 60%;
+  height: 60%;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options {
+  background-color: #fbfbfb85;
+  position: absolute;
+  right: 0;
+  top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  min-width: 170px;
+  min-height: 100px;
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 4px;
+  z-index: 5;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options a, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options a {
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: left;
+  transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options a:hover, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options a:hover {
+  background-color: #f8fafc;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form:last-child, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form:last-child {
+  border: none;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form button, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form button {
+  background-color: transparent;
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 0 8px 0 8px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form button:first-child, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form button:first-child {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form button:last-child, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form button:last-child {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .contacts-loader-waiter, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .contacts-loader-waiter {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 12px;
+  margin: auto;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: block;
+  text-align: center;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .unavailability, body .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .unavailability {
+  font-size: 17px;
+  opacity: 0.75;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 12px;
+  margin: auto;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: block;
+  text-align: center;
+}

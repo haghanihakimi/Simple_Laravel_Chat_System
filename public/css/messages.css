@@ -1,0 +1,357 @@
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+html .m_Container .m_box .messages-panel .middle-messages-viewer .usedRecoverCode, body .m_Container .m_box .messages-panel .middle-messages-viewer .usedRecoverCode, html .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder .counters-holder, body .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder .counters-holder {
+  font-family: "Spline Sans", sans-serif;
+}
+
+/* Clouds */
+@-webkit-keyframes loading {
+  from {
+    stroke-dasharray: 3000;
+  }
+  to {
+    stroke-dasharray: 200;
+  }
+}
+@keyframes loading {
+  from {
+    stroke-dasharray: 3000;
+  }
+  to {
+    stroke-dasharray: 200;
+  }
+}
+html .m_Container, body .m_Container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+html .m_Container .m_box, body .m_Container .m_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+html .m_Container .m_box .left-panel, body .m_Container .m_box .left-panel {
+  width: 100%;
+  height: 100%;
+  max-width: 75px;
+  flex: 1;
+  flex-basis: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  position: relative;
+  overflow: hidden;
+}
+html .m_Container .m_box .left-panel .preferences-left-panel, body .m_Container .m_box .left-panel .preferences-left-panel {
+  width: 100%;
+  height: 75px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html .m_Container .m_box .left-panel .preferences-left-panel span, body .m_Container .m_box .left-panel .preferences-left-panel span {
+  font-size: 27px;
+  position: relative;
+}
+html .m_Container .m_box .left-panel .preferences-left-panel a, body .m_Container .m_box .left-panel .preferences-left-panel a {
+  text-decoration: none;
+  display: block;
+  margin: auto;
+}
+html .m_Container .m_box .left-panel .preferences-left-panel a span, body .m_Container .m_box .left-panel .preferences-left-panel a span {
+  font-size: 27px;
+  position: relative;
+}
+html .m_Container .m_box .left-panel .middle-controls-box, body .m_Container .m_box .left-panel .middle-controls-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox, body .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+html .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder, body .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder {
+  margin: auto;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder span, body .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder span {
+  color: #0a111c;
+  font-size: 27px;
+  position: relative;
+}
+html .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder a, body .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder a {
+  text-decoration: none;
+  display: block;
+  margin: auto;
+}
+html .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder a span, body .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder a span {
+  font-size: 27px;
+  position: relative;
+}
+html .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder .counters-holder, body .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder .counters-holder {
+  position: absolute;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  top: -3px;
+  right: 0px;
+  border-radius: 720px;
+}
+html .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder .counters-holder_active, body .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder .counters-holder_active {
+  background-color: #e3342f;
+  color: #f8fafc;
+  width: 16px;
+  height: 16px;
+}
+html .m_Container .m_box .left-panel .bottom-controls-box, body .m_Container .m_box .left-panel .bottom-controls-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 150px;
+}
+html .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox, body .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+html .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox .icon-holder, body .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox .icon-holder {
+  margin: auto;
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+html .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox .icon-holder span, body .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox .icon-holder span {
+  color: #0a111c;
+  font-size: 27px;
+  position: relative;
+}
+html .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox .icon-holder a, body .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox .icon-holder a {
+  text-decoration: none;
+  display: block;
+  margin: auto;
+}
+html .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox .icon-holder a span, body .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox .icon-holder a span {
+  font-size: 27px;
+  position: relative;
+}
+html .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox form, body .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox form {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+html .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox form button, body .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox form button {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox form button span, body .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox form button span {
+  color: #0a111c;
+  font-size: 27px;
+  position: relative;
+}
+html .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox form .loader, body .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox form .loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  margin: auto;
+  padding: 0;
+  border-radius: 720px;
+  transform: rotate(0deg);
+}
+html .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox form .loader svg, body .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox form .loader svg {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: rotate(270deg);
+}
+html .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox form .loader svg circle, body .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox form .loader svg circle {
+  fill: none;
+  stroke: #4563F7;
+  stroke-width: 60px;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 3000;
+  -webkit-animation: loading 2s ease-in-out 0ms infinite alternate;
+  animation: loading 2s ease-in-out 0ms infinite alternate;
+}
+html .m_Container .m_box .messages-panel, body .m_Container .m_box .messages-panel {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  flex-basis: 1;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row nowrap;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer, body .m_Container .m_box .messages-panel .left-panel-viewer {
+  position: relative;
+  padding: 0;
+  max-width: 250px;
+  max-height: auto;
+  overflow: hidden;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer, body .m_Container .m_box .messages-panel .middle-messages-viewer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .usedRecoverCode, body .m_Container .m_box .messages-panel .middle-messages-viewer .usedRecoverCode {
+  font-size: 17px;
+  font-weight: 500;
+  color: #f6993f;
+  padding: 12px;
+  text-align: center;
+  margin: auto;
+}
+html .m_Container .m_box .messages-panel .middle-messages-viewer .usedRecoverCode a, body .m_Container .m_box .messages-panel .middle-messages-viewer .usedRecoverCode a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #e3342f;
+}
+html .m_Container .m_box .messages-panel .right-panel-viewer, body .m_Container .m_box .messages-panel .right-panel-viewer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: auto;
+  padding: 0;
+  overflow: hidden;
+}
+html .m_Container .m_box .messages-panel .leftActive_panels, body .m_Container .m_box .messages-panel .leftActive_panels {
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  min-height: auto;
+  opacity: 1;
+}
+html .m_Container .m_box .messages-panel .leftInactive_panels, body .m_Container .m_box .messages-panel .leftInactive_panels {
+  width: 0;
+  height: auto;
+  opacity: 0;
+}
+html .m_Container .m_box .messages-panel .rightActive_panels, body .m_Container .m_box .messages-panel .rightActive_panels {
+  width: 100%;
+  height: 100%;
+  min-width: 200px;
+  min-height: auto;
+  opacity: 1;
+}
+html .m_Container .m_box .messages-panel .rightInactive_panels, body .m_Container .m_box .messages-panel .rightInactive_panels {
+  width: 0;
+  height: auto;
+  opacity: 0;
+}
+html .m_Container .m_box .right-panel, body .m_Container .m_box .right-panel {
+  width: 100%;
+  height: 100%;
+  max-width: 75px;
+  flex: 1;
+  flex-basis: 1;
+  padding: 8px;
+  overflow: hidden;
+  transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+html .m_Container .m_box .right-panel .panel-innerbox, body .m_Container .m_box .right-panel .panel-innerbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+  border: none;
+}
+html .m_Container .m_box .right-panel .panel-innerbox .profile-pic, body .m_Container .m_box .right-panel .panel-innerbox .profile-pic {
+  background-color: #4563F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 720px;
+  padding: 2px;
+  cursor: pointer;
+  overflow: hidden;
+}
+html .m_Container .m_box .right-panel .panel-innerbox .profile-pic img, body .m_Container .m_box .right-panel .panel-innerbox .profile-pic img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 720px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: none;
+}
+html .m_Container .m_box .right-panel .panel-innerbox .horizontal-line, body .m_Container .m_box .right-panel .panel-innerbox .horizontal-line {
+  position: relative;
+  margin: 12px 0 12px 0;
+  width: 100%;
+  height: 0.5px;
+  border-radius: 720px;
+  overflow: hidden;
+}

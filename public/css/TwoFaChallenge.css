@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+html .container .container-box .twoFa__container .twoFa__box form .twoFa__error, body .container .container-box .twoFa__container .twoFa__box form .twoFa__error, html .container .container-box .twoFa__container .twoFa__box form .form__heading, body .container .container-box .twoFa__container .twoFa__box form .form__heading {
+  font-family: "Spline Sans", sans-serif;
+}
+
+/* Clouds */
+html .container .container-box, body .container .container-box {
+  width: 100%;
+  height: 100%;
+}
+html .container .container-box .twoFa__container, body .container .container-box .twoFa__container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 480px;
+  max-height: auto;
+  margin: auto;
+}
+html .container .container-box .twoFa__container .twoFa__box, body .container .container-box .twoFa__container .twoFa__box {
+  background-color: rgba(22, 22, 29, 0.025);
+  padding: 12px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(22, 22, 29, 0.1);
+  -o-box-shadow: 3px 6px 10px -8px rgba(22, 22, 29, 0.55);
+  box-shadow: 3px 6px 10px -8px rgba(22, 22, 29, 0.55);
+}
+html .container .container-box .twoFa__container .twoFa__box form, body .container .container-box .twoFa__container .twoFa__box form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+}
+html .container .container-box .twoFa__container .twoFa__box form .form__heading, body .container .container-box .twoFa__container .twoFa__box form .form__heading {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #0a111c;
+  padding: 6px;
+  margin: auto;
+  text-align: left;
+}
+html .container .container-box .twoFa__container .twoFa__box form input, body .container .container-box .twoFa__container .twoFa__box form input {
+  background-color: #f8fafc;
+  padding: 8px;
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #0a111c;
+  border-radius: 4px;
+  border: 1px solid rgba(22, 22, 29, 0.1);
+  transition: all 120ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+html .container .container-box .twoFa__container .twoFa__box form input::-webkit-outer-spin-button, html .container .container-box .twoFa__container .twoFa__box form input::-webkit-inner-spin-button, body .container .container-box .twoFa__container .twoFa__box form input::-webkit-outer-spin-button, body .container .container-box .twoFa__container .twoFa__box form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+html .container .container-box .twoFa__container .twoFa__box form input:focus, body .container .container-box .twoFa__container .twoFa__box form input:focus {
+  background-color: #ffffff;
+  -o-box-shadow: 0px 0px 15px -8px #4563F7;
+  box-shadow: 0px 0px 15px -8px #4563F7;
+}
+html .container .container-box .twoFa__container .twoFa__box form input[type=number], body .container .container-box .twoFa__container .twoFa__box form input[type=number] {
+  -moz-appearance: textfield;
+}
+html .container .container-box .twoFa__container .twoFa__box form button, body .container .container-box .twoFa__container .twoFa__box form button {
+  background-color: #4563F7;
+  padding: 12px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+html .container .container-box .twoFa__container .twoFa__box form .twoFa__error, body .container .container-box .twoFa__container .twoFa__box form .twoFa__error {
+  font-weight: 500;
+  font-size: 15px;
+  color: #e3342f;
+  letter-spacing: 1px;
+  padding: 8px;
+  text-align: left;
+}

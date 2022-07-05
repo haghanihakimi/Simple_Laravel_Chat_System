@@ -1,0 +1,223 @@
+// Variables
+@import 'variables';
+@import 'mixs';
+
+html,body {
+  .container {
+    .container-box {
+        .login-container {
+            position: relative;
+            @include fsize;
+            padding: 36px 0 0 0;
+            .login-box {
+                display: flex;
+                flex-direction: row;
+                flex-flow: row wrap;
+                flex-wrap: wrap;
+                @include csize(100%,auto);
+                @include cmin-size(100%,720px);
+                .login-form-container {
+                    position: relative;
+                    @include csize(50%, 100%);
+                    @include cmin-size(300px,auto);
+                    display: flex;
+                    align-items: center;
+                    margin: auto;
+                    flex-basis: 45%;
+                    form {
+                        @include fsize;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;
+                        @include cmax-size(360px,fit-content);
+                        position: relative;
+                        margin: auto;
+                        .form-title {
+                            @extend %Signika;
+                            color: $blue;
+                            font-weight: 800;
+                            letter-spacing: 1.5px;
+                            font-size: 28px;
+                            padding: 16px;
+                            text-align: center;
+                            @include text-transform(uppercase);
+                            @include user-select(none);
+                        }
+                        .username-box, .password-box {
+                            @include csize(100%,50px);
+                            position: relative;
+                            margin: auto;
+                            input {
+                                background-color: #f3f3f3;
+                                border: 1px solid hsla(251, 20%, 17%, 0.1);
+                                border-radius: 0;
+                                margin: auto;
+                                padding: 12px;
+                                font-size: 16px;
+                                letter-spacing: 1px;
+                                color: $black;
+                                @extend %Spline-Sans;
+                                margin: auto;
+                                @include fsize;
+                                position: relative;
+                                border-radius: 4px;
+                                @include easings(300ms);
+                                @include box-shadow(0px,0px,15px,-8px,hsla(250, 20%, 17%, 0.5));
+                                &:focus + span {
+                                    opacity: 1;
+                                    @include csize(100%,3px);
+                                }
+                                &:focus {
+                                    background-color: $body-bg;
+                                    @include box-shadow(0px,0px,15px,-8px,$blue);
+                                }
+                                &:invalid:focus {
+                                    @include box-shadow(0px,0px,15px,-8px,$red);
+                                }
+                                &:invalid {
+                                    @include box-shadow(0px,0px,15px,-8px,$red);
+                                }
+                                &:-moz-submit-invalid {
+                                    @include box-shadow(0px,0px,15px,-8px,$red);
+                                }
+                            }
+                            span {
+                                background-color: $blue;
+                                position: absolute;
+                                @include csize(0,3px);
+                                bottom: 0;
+                                left: 50%;
+                                opacity: 0;
+                                @include translateX(-50%);
+                                border-bottom-left-radius: 4px;
+                                border-bottom-right-radius: 4px;
+                                @include easings(300ms);
+                            }
+                        }
+                        .rememberme-box {
+                            display: block;
+                            position: relative;
+                            padding-left: 40px;
+                            margin-bottom: 0;
+                            cursor: pointer;
+                            font-size: 16px;
+                            font-weight: 600;
+                            letter-spacing: 1.5px;
+                            @extend %Spline-Sans;
+                            @include user-select(none);
+                            &:hover {
+                                input ~ .checkmark {
+                                    background-color: #ccc;
+                                }
+                            }
+                            input {
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                                height: 0;
+                                width: 0;
+                                &:checked ~ .checkmark {
+                                    background-color: $blue;
+                                    &::after {
+                                        display: block;
+                                    }
+                                }
+                            }
+                            .checkmark {
+                                position: absolute;
+                                top: 1px;
+                                left: 12px;
+                                height: 20px;
+                                width: 20px;
+                                border-radius: 4px;
+                                background-color: #f3f3f3;
+                                border: 1px solid hsla(250, 20%, 17%, 0.15);
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    display: none;
+                                    left: 5.5px;
+                                    top: 1.5px;
+                                    width: 4px;
+                                    height: 8px;
+                                    border: solid $white;
+                                    border-width: 0 3px 3px 0;
+                                    @include rotate(45deg);
+                                }
+                            }
+                        }
+                        button {
+                            background-color: $blue;
+                            position: relative;
+                            @include csize(100%,50px);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            letter-spacing: 1.2px;
+                            color: $white;
+                            @extend %Spline-Sans;
+                            @include  easings(120ms);
+                            border-radius: 4px;
+                            border: none;
+                            font-weight: 700;
+                            font-size: 17px;
+                            cursor: pointer;
+                            &:hover {
+                                background-color: $purple;
+                                color: $body-bg;
+                            }
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $blue;
+                            letter-spacing: 1px;
+                            @extend %Spline-Sans;
+                            font-weight: 600;
+                            font-size: 15px;
+                            padding: 0 8px 0 8px;
+                            margin: 0;
+                            @include text-transform(capitalize);
+                            text-align: left;
+                            @include user-select(none);
+                            @include easings(200ms);
+                            &:hover {
+                                letter-spacing: 1.5px;
+                                font-weight: 700;
+                            }
+                        }
+                        .errors {
+                            color: $red;
+                            padding: 0 8px 0 8px;
+                            font-weight: 700;
+                            font-size: 17px;
+                            letter-spacing: 1.2px;
+                            @extend %Spline-Sans;
+                        }
+                    }
+                }
+                .login-media-container {
+                    background-color: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include fsize;
+                    position: relative;
+                    @include csize(50%,fit-content);
+                    @include cmin-size(300px,auto);
+                    flex-basis: 55%;
+                    img {
+                        background-color: transparent;
+                        @include fsize;
+                        margin: auto;
+                    }
+                }
+                @include phone (1048px) {
+                    .login-media-container {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+  }
+}

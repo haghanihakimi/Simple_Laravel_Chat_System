@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+html .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form, body .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form, html .m_Container .m_box .messages-panel .left-panel-viewer .preferences .panel-title, body .m_Container .m_box .messages-panel .left-panel-viewer .preferences .panel-title {
+  font-family: "Spline Sans", sans-serif;
+}
+
+/* Clouds */
+html .m_Container .m_box .messages-panel .left-panel-viewer, body .m_Container .m_box .messages-panel .left-panel-viewer {
+  max-width: 250px;
+  max-height: auto;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .preferences, body .m_Container .m_box .messages-panel .left-panel-viewer .preferences {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .preferences .panel-title, body .m_Container .m_box .messages-panel .left-panel-viewer .preferences .panel-title {
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 12px;
+  font-weight: 600;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox, body .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box, body .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles, body .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles {
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form, body .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row nowrap;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  align-items: center;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form button, body .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form button {
+  position: relative;
+  width: 38px;
+  height: 18px;
+  border-radius: 720px;
+  cursor: pointer;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form button span, body .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form button span {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -1px;
+  top: -1px;
+  border-radius: 720px;
+  transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form button .toggleOff, body .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form button .toggleOff {
+  left: -1px;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form button .toggleOn, body .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form button .toggleOn {
+  left: 19px;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .savingDisabled, body .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .savingDisabled {
+  opacity: 0.25;
+}

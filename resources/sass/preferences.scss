@@ -1,0 +1,87 @@
+// Variables
+@import 'variables';
+@import 'mixs';
+
+html,body {
+    .m_Container {
+        .m_box {
+            .messages-panel {
+                .left-panel-viewer {
+                    @include cmax-size(250px,auto);
+                    .preferences {
+                        position: relative;
+                        @include fsize;
+                        overflow: hidden;
+                        overflow-x: hidden;
+                        .panel-title {
+                            position: relative;
+                            @extend %Spline-Sans;
+                            font-size: 20px;
+                            letter-spacing: 2px;
+                            padding: 12px;
+                            font-weight: 600;
+                            text-align: center;
+                            @include user-select(none);
+                        }
+                        .preferences-innerbox {
+                            position: relative;
+                            @include csize(100%,auto);
+                            display: flex;
+                            flex-direction: column;
+                            padding: 12px;
+                            .preference-item-box {
+                                position: relative;
+                                @include csize(100%,auto);
+                                display: flex;
+                                flex-direction: column;
+                                gap: 16px;
+                                .modesToggles {
+                                    position: relative;
+                                    @include csize(100%,fit-content);
+                                    form {
+                                        position: relative;
+                                        @include fsize;
+                                        display: flex;
+                                        flex-direction: row;
+                                        flex-flow: row nowrap;
+                                        flex-wrap: nowrap;
+                                        justify-content: space-between;
+                                        gap: 12px;
+                                        @extend %Spline-Sans;
+                                        font-size: 15px;
+                                        letter-spacing: 1.5px;
+                                        font-weight: 600;
+                                        align-items: center;
+                                        button {
+                                            position: relative;
+                                            @include csize(38px,18px);
+                                            border-radius: 720px;
+                                            cursor: pointer;
+                                            span {
+                                                position: absolute;
+                                                @include csize(18px,18px);
+                                                left: -1px;
+                                                top: -1px;
+                                                border-radius: 720px;
+                                                @include easings(300ms);
+                                            }
+                                            .toggleOff {
+                                                left: -1px;
+                                            }
+                                            .toggleOn {
+                                                left: 19px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .savingDisabled {
+                                    opacity: 0.25;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

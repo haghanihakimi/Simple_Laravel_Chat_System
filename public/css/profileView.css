@@ -1,0 +1,355 @@
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+html #app .profile-view-container .profile-box .profileView-close .btnClose, body #app .profile-view-container .profile-box .profileView-close .btnClose, html #app .profile-view-container .profile-box .ps .profile-desc-holder .profile-desciption, body #app .profile-view-container .profile-box .ps .profile-desc-holder .profile-desciption, html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box form button span, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box form button span, html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box form button span, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box form button span, html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box a span, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box a span, html #app .profile-view-container .profile-box .ps .profile-names-holder .profile-name, body #app .profile-view-container .profile-box .ps .profile-names-holder .profile-name {
+  font-family: "Spline Sans", sans-serif;
+}
+
+/* Clouds */
+html #app .profile-view-container, body #app .profile-view-container {
+  position: fixed;
+  -webkit-backdrop-filter: blur(25px);
+  -moz-backdrop-filter: blur(25px);
+  -o-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding: 12px;
+  z-index: 9999999999;
+  overflow: hidden;
+  border-radius: 4px;
+}
+html #app .profile-view-container .profile-box, body #app .profile-view-container .profile-box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 512px;
+  max-height: auto;
+  min-width: auto;
+  min-height: 420px;
+  margin: auto;
+  padding: 0 0 45px 0;
+}
+html #app .profile-view-container .profile-box .ps, body #app .profile-view-container .profile-box .ps {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: auto;
+  min-height: 420px;
+  padding: 8px;
+}
+html #app .profile-view-container .profile-box .ps .profile-avatar-holder, body #app .profile-view-container .profile-box .ps .profile-avatar-holder {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+}
+html #app .profile-view-container .profile-box .ps .profile-avatar-holder .profile-avatar-box, body #app .profile-view-container .profile-box .ps .profile-avatar-holder .profile-avatar-box {
+  background-color: #0ea785;
+  position: relative;
+  margin: auto;
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border-radius: 720px;
+}
+html #app .profile-view-container .profile-box .ps .profile-avatar-holder .profile-avatar-box img, body #app .profile-view-container .profile-box .ps .profile-avatar-holder .profile-avatar-box img {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 720px;
+  margin: auto;
+}
+html #app .profile-view-container .profile-box .ps .profile-avatar-holder .profile-avatar-box .lock_profile, body #app .profile-view-container .profile-box .ps .profile-avatar-holder .profile-avatar-box .lock_profile {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  transform: translateX(-50%);
+}
+html #app .profile-view-container .profile-box .ps .profile-names-holder, body #app .profile-view-container .profile-box .ps .profile-names-holder {
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 0 12px 0;
+}
+html #app .profile-view-container .profile-box .ps .profile-names-holder .profile-name, body #app .profile-view-container .profile-box .ps .profile-names-holder .profile-name {
+  text-align: center;
+  padding: 8px;
+  margin: auto;
+  font-size: 18px;
+  letter-spacing: 1px;
+  display: block;
+  font-weight: 600;
+  line-height: 20px;
+}
+html #app .profile-view-container .profile-box .ps .profile-names-holder .profile-name .name-age, body #app .profile-view-container .profile-box .ps .profile-names-holder .profile-name .name-age {
+  display: block;
+  opacity: 0.75;
+  font-size: 12px;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder, body #app .profile-view-container .profile-box .ps .profile-controls-holder {
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  margin: 4px 0 0 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box {
+  margin: auto;
+  display: inline-flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 32px;
+  flex-flow: row wrap;
+  gap: 6px;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box a, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box a {
+  background-color: #4563F7;
+  text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 6px;
+  border-radius: 4px;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box a svg, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box a svg {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin: auto auto auto 0;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box a svg *, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box a svg * {
+  fill: #fbfbfb85;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box a span, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box a span {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin: auto;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box form, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box form {
+  display: inline-block;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box form button, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box form button {
+  background-color: #4563F7;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 4px;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box form button svg, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box form button svg {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin: auto auto auto 0;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box form button svg *, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box form button svg * {
+  fill: #fbfbfb85;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box form button span, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box form button span {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin: auto;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options {
+  background-color: #4563F7;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options svg, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options svg {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin: auto auto auto 0;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options svg *, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options svg * {
+  fill: #fbfbfb85;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box {
+  background-color: #fff;
+  position: absolute;
+  flex-direction: column;
+  gap: 6px;
+  width: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  min-height: auto;
+  right: 0;
+  top: 34px;
+  border: 1px solid rgba(22, 22, 29, 0.2);
+  border-radius: 4px;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box form, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box form {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 4px 8px 4px 8px;
+  transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box form:hover, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box form:hover {
+  background-color: rgba(22, 22, 29, 0.025);
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box form button, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box form button {
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  min-width: 100%;
+  min-height: auto;
+  gap: 4px;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box form button svg, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box form button svg {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin: auto auto auto 0;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box form button svg *, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box form button svg * {
+  fill: #4563F7;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box form button span, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box form button span {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #0a111c;
+  text-align: left;
+  display: inline-block;
+  min-width: 150px;
+  min-height: auto;
+  position: relative;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box__inactive, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box__inactive {
+  visibility: hidden;
+  display: none;
+}
+html #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box__active, body #app .profile-view-container .profile-box .ps .profile-controls-holder .profile-controls-box .more-options .more-options-box__active {
+  visibility: visible;
+  display: flex;
+}
+html #app .profile-view-container .profile-box .ps .profile-desc-holder, body #app .profile-view-container .profile-box .ps .profile-desc-holder {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 24px 0 0 0;
+}
+html #app .profile-view-container .profile-box .ps .profile-desc-holder .profile-desciption, body #app .profile-view-container .profile-box .ps .profile-desc-holder .profile-desciption {
+  font-size: 15px;
+  opacity: 0.9;
+  letter-spacing: 1px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  max-height: auto;
+  word-break: break-all;
+  font-weight: 500;
+}
+html #app .profile-view-container .profile-box .profileView-close, body #app .profile-view-container .profile-box .profileView-close {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 8px;
+}
+html #app .profile-view-container .profile-box .profileView-close .btnClose, body #app .profile-view-container .profile-box .profileView-close .btnClose {
+  padding: 8px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #0ea785;
+  font-weight: 500px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}

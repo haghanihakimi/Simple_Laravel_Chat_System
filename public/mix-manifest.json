@@ -1,0 +1,23 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/messagesScreen.css": "/css/messagesScreen.css",
+    "/css/peopleSearch.css": "/css/peopleSearch.css",
+    "/css/home.css": "/css/home.css",
+    "/css/lightTheme.css": "/css/lightTheme.css",
+    "/css/darkTheme.css": "/css/darkTheme.css",
+    "/css/defaults.css": "/css/defaults.css",
+    "/css/ConversationsView.css": "/css/ConversationsView.css",
+    "/css/TwoFaChallenge.css": "/css/TwoFaChallenge.css",
+    "/css/notifications.css": "/css/notifications.css",
+    "/css/SecuritySettings.css": "/css/SecuritySettings.css",
+    "/css/ContactBlockRemoveAlert.css": "/css/ContactBlockRemoveAlert.css",
+    "/css/contactRequestsList.css": "/css/contactRequestsList.css",
+    "/css/profileView.css": "/css/profileView.css",
+    "/css/errors.css": "/css/errors.css",
+    "/css/profiles.css": "/css/profiles.css",
+    "/css/ProfileOverview.css": "/css/ProfileOverview.css",
+    "/css/preferences.css": "/css/preferences.css",
+    "/css/messages.css": "/css/messages.css",
+    "/css/login.css": "/css/login.css",
+    "/css/signup.css": "/css/signup.css"
+}

@@ -1,0 +1,291 @@
+@import 'variables';
+@import 'mixs';
+
+html,body {
+    #app {
+        .profile-view-container {
+            position: fixed;
+            @include backblur(25px);
+            @include fsize;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: 0;
+            padding: 12px;
+            z-index: 9999999999;
+            overflow: hidden;
+            border-radius: 4px;
+            .profile-box {
+                position: relative;
+                @include csize(100%,auto);
+                @include cmax-size(512px,auto);
+                @include cmin-size(auto,420px);
+                margin: auto;
+                padding: 0 0 45px 0;
+                .ps {
+                    position: relative;
+                    @include fsize;
+                    @include cmin-size(auto,420px);
+                    padding: 8px;
+                    .profile-avatar-holder {
+                        position: relative;
+                        @include csize(100%,auto);
+                        display: flex;
+                        padding: 12px;
+                        justify-content: center;
+                        align-items: center;
+                        .profile-avatar-box {
+                            background-color: $green;
+                            position: relative;
+                            margin: auto;
+                            @include csize(auto,auto);
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 4px;
+                            border-radius: 720px;
+                            img {
+                                position: relative;
+                                @include csize(90px,90px);
+                                object-fit: cover;
+                                border-radius: 720px;
+                                margin: auto;
+                            }
+                            .lock_profile {
+                                position: absolute;
+                                bottom:-2px;
+                                left: 50%;
+                                @include csize(18px,18px);
+                                @include translateX(-50%);
+                            }
+                        }
+                    }
+                    .profile-names-holder {
+                        position: relative;
+                        @include csize(100%,fit-content);
+                        padding: 0 0 12px 0;
+                        .profile-name {
+                            text-align: center;
+                            padding: 8px;
+                            margin: auto;
+                            font-size: 18px;
+                            letter-spacing: 1px;
+                            @extend %Spline-Sans;
+                            display: block;
+                            font-weight: 600;
+                            line-height: 20px;
+                            .name-age {
+                                display: block;
+                                opacity: 0.75;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .profile-controls-holder {
+                        position: relative;
+                        @include csize(100%,fit-content);
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0;
+                        margin: 4px 0 0 0;
+                        @include user-select(none);
+                        .profile-controls-box {
+                            margin: auto;
+                            display: inline-flex;
+                            @include csize(fit-content,32px);
+                            flex-flow: row wrap;
+                            gap: 6px;
+                            a {
+                                background-color: $blue;
+                                text-decoration: none;
+                                position: relative;
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: row;
+                                gap: 4px;
+                                @include csize(fit-content, fit-content);
+                                padding: 6px;
+                                border-radius: 4px;
+                                svg {
+                                    position: relative;
+                                    @include csize(18px,18px);
+                                    margin: auto auto auto 0;
+                                    * {
+                                        fill: $clouds;
+                                    }
+                                }
+                                span {
+                                    @extend %Spline-Sans;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    letter-spacing: 1px;
+                                    color: $white;
+                                    margin: auto;
+                                }
+                            }
+                            form {
+                                display: inline-block;
+                                position: relative;
+                                @include csize(fit-content, fit-content);
+                                button {
+                                    background-color: $blue;
+                                    position: relative;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-direction: row;
+                                    gap: 4px;
+                                    border: none;
+                                    padding: 6px;
+                                    border-radius: 4px;
+                                    cursor: pointer;
+                                    svg {
+                                        position: relative;
+                                        @include csize(18px,18px);
+                                        margin: auto auto auto 0;
+                                        * {
+                                            fill: $clouds;
+                                        }
+                                    }
+                                    span {
+                                        @extend %Spline-Sans;
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                        letter-spacing: 1px;
+                                        color: $white;
+                                        margin: auto;
+                                    }
+                                }
+                            }
+                            .more-options {
+                                background-color: $blue;
+                                position: relative;
+                                display: inline-flex;
+                                flex-direction: column;
+                                @include csize(fit-content, fit-content);
+                                padding: 6px;
+                                cursor: pointer;
+                                border-radius: 4px;
+                                svg {
+                                    position: relative;
+                                    @include csize(18px,18px);
+                                    margin: auto auto auto 0;
+                                    * {
+                                        fill: $clouds;
+                                    }
+                                }
+                                .more-options-box {
+                                    background-color: #fff;
+                                    position: absolute;
+                                    flex-direction: column;
+                                    gap: 6px;
+                                    @include csize(auto,fit-content);
+                                    @include cmin-size(fit-content,auto);
+                                    right: 0;
+                                    top: 34px;
+                                    border: 1px solid hsla(240, 14%, 10%, 0.2);
+                                    border-radius: 4px;
+                                    form {
+                                        display: inline-block;
+                                        position: relative;
+                                        @include csize(auto, fit-content);
+                                        padding: 4px 8px 4px 8px;
+                                        @include easings(200ms);
+                                        &:hover {
+                                            background-color: hsla(240, 14%, 10%, 0.025);
+                                        }
+                                        button {
+                                            background-color: transparent;
+                                            position: relative;
+                                            display: flex;
+                                            justify-content: flex-start;
+                                            align-items: center;
+                                            flex-direction: row;
+                                            @include csize(100%,auto);
+                                            @include cmin-size(100%,auto);
+                                            gap: 4px;
+                                            border: none;
+                                            padding: 6px;
+                                            border-radius: 4px;
+                                            cursor: pointer;
+                                            text-align: left;
+                                            svg {
+                                                position: relative;
+                                                @include csize(18px,18px);
+                                                margin: auto auto auto 0;
+                                                * {
+                                                    fill: $blue;
+                                                }
+                                            }
+                                            span {
+                                                @extend %Spline-Sans;
+                                                font-size: 15px;
+                                                font-weight: 600;
+                                                letter-spacing: 1px;
+                                                color: $black;
+                                                text-align: left;
+                                                display: inline-block;
+                                                @include cmin-size(150px,auto);
+                                                position: relative;
+                                            }
+                                        }
+                                    }
+                                }
+                                .more-options-box__inactive {
+                                    visibility: hidden;
+                                    display: none;
+                                }
+                                .more-options-box__active {
+                                    visibility: visible;
+                                    display: flex;
+                                }
+                            }
+                        }
+                    }
+                    .profile-desc-holder {
+                        position: relative;
+                        @include csize(100%,auto);
+                        text-align: center;
+                        padding: 24px 0 0 0;
+                        .profile-desciption {
+                            font-size: 15px;
+                            opacity: 0.9;
+                            letter-spacing: 1px;
+                            text-align: center;
+                            display: inline-block;
+                            @include csize(100%,auto);
+                            @include cmax-size(400px,auto);
+                            word-break: break-all;
+                            font-weight: 500;
+                            @extend %Spline-Sans;
+                        }
+                    }
+                }
+                .profileView-close {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    @include csize(100%,auto);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    padding: 8px;
+                    .btnClose {
+                        padding: 8px;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                        color: #fff;
+                        background-color: $green;
+                        font-weight: 500px;
+                        @extend %Spline-Sans;
+                        border-radius: 4px;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

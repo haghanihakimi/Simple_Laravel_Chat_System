@@ -1,0 +1,128 @@
+// Variables
+@import 'variables';
+@import 'mixs';
+
+html,body {
+  .container {
+    .container-box {
+        .signup-container {
+            position: relative;
+            @include fsize;
+            padding: 36px 0 0 0;
+            .signup-box {
+                display: flex;
+                flex-direction: row;
+                flex-flow: row wrap;
+                flex-wrap: wrap;
+                @include csize(100%,auto);
+                @include cmin-size(100%,720px);
+                .signup-form-container {
+                    position: relative;
+                    @include csize(50%, 100%);
+                    @include cmin-size(300px,auto);
+                    display: flex;
+                    align-items: center;
+                    margin: auto;
+                    flex-basis: 45%;
+                    form {
+                        @include fsize;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;
+                        @include cmax-size(412px,fit-content);
+                        position: relative;
+                        margin: auto;
+                        .form-inputs {
+                            display: flex;
+                            flex-direction: row;
+                            flex-flow: row wrap;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            gap: 12px;
+                            @include csize(100%,50px);
+                            @include cmin-size(100px,auto);
+                            @include cmax-size(412px,auto);
+                            input, select {
+                                background-color: #f7f7f7;
+                                @include fsize;
+                                @include cmin-size(200px,auto);
+                                flex: 1;
+                                flex-basis: 1;
+                                border-radius: 4px;
+                                border: 1px solid hsla(250, 20%, 17%, 0.1);
+                                font-size: 16px;
+                                letter-spacing: 1.2px;
+                                font-weight: 500;
+                                @extend %Spline-Sans;
+                                color: $black;
+                                @include easings(300ms);
+                                padding: 12px;
+                                &:focus {
+                                    background-color: $body-bg;
+                                    @include box-shadow(0px,0px,15px,-8px,$blue);
+                                }
+                                &:invalid:focus {
+                                    @include box-shadow(0px,0px,15px,-8px,$red);
+                                }
+                                &:invalid {
+                                    @include box-shadow(0px,0px,15px,-8px,$red);
+                                }
+                                &:-moz-submit-invalid {
+                                    @include box-shadow(0px,0px,15px,-8px,$red);
+                                }
+                            }
+                            select {
+                                @include text-transform(capitalize);
+                            }
+                        }
+                        button {
+                            background-color: $blue;
+                            position: relative;
+                            padding: 16px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 4px;
+                            border: none;
+                            cursor: pointer;
+                            font-size: 17px;
+                            font-weight: 700;
+                            @extend %Spline-Sans;
+                            letter-spacing: 1.5px;
+                            color: $white;
+                            @include csize(100%,50px);
+                            margin: auto;
+                            @include easings(150ms);
+                            &:hover {
+                                background-color: $purple;
+                                color: $body-bg;
+                            }
+                        }
+                    }
+                }
+                .signup-media-container {
+                    background-color: #f7f7f7;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include fsize;
+                    position: relative;
+                    @include csize(50%,fit-content);
+                    @include cmin-size(300px,auto);
+                    flex-basis: 55%;
+                    img {
+                        background-color: #f7f7f7;
+                        @include fsize;
+                        margin: auto;
+                    }
+                }
+                @include phone (1048px) {
+                    .signup-media-container {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+  }
+}

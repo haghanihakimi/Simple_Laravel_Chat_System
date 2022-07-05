@@ -1,0 +1,379 @@
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+/* Clouds */
+html .light-theme .m_Container, body .light-theme .m_Container {
+  background-color: #f8fafc;
+}
+html .light-theme .m_Container .m_box .left-panel, body .light-theme .m_Container .m_box .left-panel {
+  background-color: #f3f3f3;
+  border-right: 1px solid rgba(9, 16, 27, 0.1);
+  -o-box-shadow: 1px 0px 8px -5px rgba(38, 35, 52, 0.5);
+  box-shadow: 1px 0px 8px -5px rgba(38, 35, 52, 0.5);
+}
+html .light-theme .m_Container .m_box .left-panel .preferences-left-panel span, body .light-theme .m_Container .m_box .left-panel .preferences-left-panel span {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder span, body .light-theme .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder span {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder a span, body .light-theme .m_Container .m_box .left-panel .middle-controls-box .left-panel-innerbox .icon-holder a span {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox .icon-holder span, body .light-theme .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox .icon-holder span {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox .icon-holder a span, body .light-theme .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox .icon-holder a span {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox form button span, body .light-theme .m_Container .m_box .left-panel .bottom-controls-box .left-panel-innerbox form button span {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer {
+  background-color: #fff;
+  border-right: 1px solid rgba(9, 16, 27, 0.1);
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .preferences .panel-title, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .preferences .panel-title {
+  color: #0a111c;
+  border-bottom: 1px solid rgba(9, 16, 27, 0.1);
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form button, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form button {
+  background-color: rgba(207, 207, 207, 0.25);
+  border: 1px solid rgba(207, 207, 207, 0.25);
+  cursor: pointer;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form button span, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .preferences .preferences-innerbox .preference-item-box .modesToggles form button span {
+  background-color: #4563F7;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps form input, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps form input {
+  background-color: #f8fafc;
+  color: #0a111c;
+  border: 1px solid rgba(9, 16, 27, 0.1);
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list {
+  border-bottom: 1px solid rgba(9, 16, 27, 0.1);
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list:hover, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list:hover {
+  background-color: #f8fafc;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list .people-names-holder span, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .searchbox-container .ps .people-listbox .people-list .people-names-holder span {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav {
+  border-bottom: 1px solid rgba(9, 16, 27, 0.1);
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav li a, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav li a {
+  color: #4563F7;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav li .active, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .nav li .active {
+  color: #16161d;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container {
+  border-bottom: 1px solid rgba(9, 16, 27, 0.1);
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-names span, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-names span {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box button:hover, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box button:hover {
+  background-color: #ffffff;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options {
+  -o-box-shadow: 1px 0px 8px -5px rgba(38, 35, 52, 0.5);
+  box-shadow: 1px 0px 8px -5px rgba(38, 35, 52, 0.5);
+  border: 1px solid rgba(9, 16, 27, 0.1);
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options a, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options a {
+  color: #0a111c;
+  border-bottom: 1px solid rgba(9, 16, 27, 0.1);
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form {
+  border-bottom: 1px solid rgba(9, 16, 27, 0.1);
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form button, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form button {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form button:hover, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .wrapper .list-container .list-holder .list-item-controls-box .more-options form button:hover {
+  background-color: #f8fafc;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .contacts-loader-waiter, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .contacts-loader-waiter {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .unavailability, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .contact-requests-list-container .contacts-list .contacts-list-tab-container .contact-requests-tab-contents .unavailability {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .loader svg circle, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .loader svg circle {
+  stroke: #4563F7;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a {
+  background-color: rgba(22, 22, 29, 0.025);
+  border: 1px solid rgba(22, 22, 29, 0.05);
+  -o-box-shadow: 2px 3px 10px -8px rgba(22, 22, 29, 0.5);
+  box-shadow: 2px 3px 10px -8px rgba(22, 22, 29, 0.5);
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a:hover, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a:hover {
+  background-color: rgba(22, 22, 29, 0.05);
+  border: 1px solid rgba(22, 22, 29, 0.1);
+  -o-box-shadow: 2px 3px 10px -6px rgba(22, 22, 29, 0.5);
+  box-shadow: 2px 3px 10px -6px rgba(22, 22, 29, 0.5);
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__info span, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__info span {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__info .rmv__conversation form button, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__info .rmv__conversation form button {
+  border: 1px solid rgba(22, 22, 29, 0.05);
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__info .rmv__conversation form button:hover, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__info .rmv__conversation form button:hover {
+  background-color: #e3342f;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__info .rmv__conversation form button:hover svg *, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__info .rmv__conversation form button:hover svg * {
+  fill: #ffffff;
+}
+html .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .empty__conversations, body .light-theme .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .empty__conversations {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box {
+  background-color: #fbfbfb85;
+  border: 1px solid rgba(9, 16, 27, 0.1);
+  -o-box-shadow: 0px 0px 12px -8px rgba(38, 35, 52, 0.5);
+  box-shadow: 0px 0px 12px -8px rgba(38, 35, 52, 0.5);
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box .settingsHeader, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box .settingsHeader {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs label, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs label {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs input, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs input {
+  background-color: #f8fafc;
+  color: #0a111c;
+  border: 1px solid rgba(9, 16, 27, 0.1);
+  -o-box-shadow: 0px 0px 15px -8px rgba(38, 35, 52, 0.5);
+  box-shadow: 0px 0px 15px -8px rgba(38, 35, 52, 0.5);
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs input:focus, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs input:focus {
+  background-color: #ffffff;
+  -o-box-shadow: 0px 0px 15px -8px #4563F7;
+  box-shadow: 0px 0px 15px -8px #4563F7;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs input:invalid:focus, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs input:invalid:focus {
+  -o-box-shadow: 0px 0px 15px -8px #e3342f;
+  box-shadow: 0px 0px 15px -8px #e3342f;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs input:invalid, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs input:invalid {
+  -o-box-shadow: 0px 0px 15px -8px #e3342f;
+  box-shadow: 0px 0px 15px -8px #e3342f;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs input:-moz-submit-invalid, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs input:-moz-submit-invalid {
+  -o-box-shadow: 0px 0px 15px -8px #e3342f;
+  box-shadow: 0px 0px 15px -8px #e3342f;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs .current__email, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs .current__email {
+  color: #0ea785;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs .errors__box .errors, html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs .errors__box .response, html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs .response__box .errors, html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs .response__box .response, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs .errors__box .errors, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs .errors__box .response, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs .response__box .errors, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs .response__box .response {
+  color: #e3342f;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs .response__box .response, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs .response__box .response {
+  color: #0ea785;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs button, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .formInputs button {
+  background-color: transparent;
+  color: #4563F7;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .loader svg circle, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form .loader svg circle {
+  stroke: #4563F7;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form p.errors, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form p.errors {
+  color: #e3342f;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form p.success, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box form p.success {
+  color: #0ea785;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box .qrCode__container .qrCode__descriptions, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box .qrCode__container .qrCode__descriptions {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box .twoFa__recovery__codes, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box .twoFa__recovery__codes {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box .twoFa__recovery__codes ul, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .ss-box .twoFa__recovery__codes ul {
+  background-color: rgba(22, 22, 29, 0.025);
+  border: 1px solid rgba(22, 22, 29, 0.1);
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .account__delete__warning, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .account__delete__warning {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .account__delete__warning .account__delete__popup, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .account__delete__warning .account__delete__popup {
+  background-color: rgba(22, 22, 29, 0.04);
+  border: 1px solid rgba(22, 22, 29, 0.05);
+  -o-box-shadow: -1px 0px 8px -5px rgba(38, 35, 52, 0.5);
+  box-shadow: -1px 0px 8px -5px rgba(38, 35, 52, 0.5);
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .account__delete__warning .account__delete__popup .alert__title, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .account__delete__warning .account__delete__popup .alert__title {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .account__delete__warning .account__delete__popup .alert__message, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .account__delete__warning .account__delete__popup .alert__message {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .account__delete__warning .account__delete__popup .alert__controls, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .account__delete__warning .account__delete__popup .alert__controls {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .account__delete__warning .account__delete__popup .alert__controls form button, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .account__delete__warning .account__delete__popup .alert__controls form button {
+  background-color: #e3342f;
+  color: #ffffff;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .account__delete__warning .account__delete__popup .alert__controls form button:nth-child(1), body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .account__delete__warning .account__delete__popup .alert__controls form button:nth-child(1) {
+  background-color: #0ea785;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert {
+  background-color: rgba(248, 250, 252, 0.95);
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save {
+  border: 1px solid rgba(9, 16, 26, 0.1);
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs {
+  background-color: rgba(9, 16, 26, 0.0015);
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__title, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__title {
+  background-color: #f2f5f8;
+  border-bottom: 1px solid rgba(9, 16, 26, 0.1);
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__descriptions, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__descriptions {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons input, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons input {
+  color: #0a111c;
+  border: 1px solid rgba(9, 16, 26, 0.07);
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons div button, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons div button {
+  background-color: #4563F7;
+  color: #ffffff;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons div button:first-child, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .form__buttons div button:first-child {
+  background-color: #0ea785;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .response__box .error, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .response__box .error {
+  color: #e3342f;
+}
+html .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .response__box .response, body .light-theme .m_Container .m_box .messages-panel .middle-messages-viewer .ss-container .security__settings__save__alert .security__settings__save form .password__confirm__inputs .response__box .response {
+  color: #0ea785;
+}
+html .light-theme .m_Container .m_box .messages-panel .right-panel-viewer, body .light-theme .m_Container .m_box .messages-panel .right-panel-viewer {
+  background-color: #fff;
+  border-left: 1px solid rgba(9, 16, 27, 0.1);
+}
+html .light-theme .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-name-box .profile-name, body .light-theme .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-name-box .profile-name {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-user-descriptions, body .light-theme .m_Container .m_box .messages-panel .right-panel-viewer .profile-overview .profile-user-descriptions {
+  color: #0a111c;
+}
+html .light-theme .m_Container .m_box .right-panel, body .light-theme .m_Container .m_box .right-panel {
+  background-color: #f3f3f3;
+  border-left: 1px solid rgba(9, 16, 27, 0.1);
+  -o-box-shadow: -1px 0px 8px -5px rgba(38, 35, 52, 0.5);
+  box-shadow: -1px 0px 8px -5px rgba(38, 35, 52, 0.5);
+}
+html .light-theme .errors-container, body .light-theme .errors-container {
+  background-color: rgba(248, 250, 252, 0.9);
+}
+html .light-theme .errors-container .errors-popup, body .light-theme .errors-container .errors-popup {
+  background-color: #f3f3f3;
+  border: 1px solid rgba(9, 16, 27, 0.1);
+}
+html .light-theme .errors-container .errors-popup .error-heading, body .light-theme .errors-container .errors-popup .error-heading {
+  border-bottom: 1px solid rgba(9, 16, 27, 0.1);
+}
+html .light-theme .errors-container .errors-popup .error-heading strong, body .light-theme .errors-container .errors-popup .error-heading strong {
+  color: #0a111c;
+}
+html .light-theme .errors-container .errors-popup .error-body p, body .light-theme .errors-container .errors-popup .error-body p {
+  color: #0a111c;
+}
+html .light-theme .profile-container, body .light-theme .profile-container {
+  background-color: rgba(248, 250, 252, 0.9);
+}
+html .light-theme .profile-container .profile-middlebox, body .light-theme .profile-container .profile-middlebox {
+  background-color: #f7f7f7;
+  border: 1px solid #f3f3f3;
+  -o-box-shadow: 0px 0px 10px -3px rgba(38, 35, 52, 0.5);
+  box-shadow: 0px 0px 10px -3px rgba(38, 35, 52, 0.5);
+}
+html .light-theme .profile-container .profile-middlebox .updating-layer, body .light-theme .profile-container .profile-middlebox .updating-layer {
+  background-color: rgba(248, 250, 252, 0.9);
+}
+html .light-theme .profile-container .profile-middlebox .ps, body .light-theme .profile-container .profile-middlebox .ps {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+html .light-theme .profile-container .profile-middlebox .ps .profile-pic-box-holder, body .light-theme .profile-container .profile-middlebox .ps .profile-pic-box-holder {
+  border-bottom: 1px solid rgba(38, 35, 52, 0.1);
+}
+html .light-theme .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-pic-box, body .light-theme .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-pic-box {
+  background-color: #fff;
+  border: 1px solid rgba(38, 35, 52, 0.1);
+}
+html .light-theme .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input, body .light-theme .profile-container .profile-middlebox .ps .profile-pic-box-holder .profile-name-box input {
+  background-color: #fff;
+  border: 1px solid rgba(38, 35, 52, 0.1);
+  color: #0a111c;
+}
+html .light-theme .profile-container .profile-middlebox .ps .sections-box .section-title, body .light-theme .profile-container .profile-middlebox .ps .sections-box .section-title {
+  color: #0a111c;
+}
+html .light-theme .profile-container .profile-middlebox .ps .sections-box .locked-account-box:hover input ~ .checkmark, body .light-theme .profile-container .profile-middlebox .ps .sections-box .locked-account-box:hover input ~ .checkmark {
+  background-color: #b1b1b1;
+}
+html .light-theme .profile-container .profile-middlebox .ps .sections-box .locked-account-box input:checked ~ .checkmark, body .light-theme .profile-container .profile-middlebox .ps .sections-box .locked-account-box input:checked ~ .checkmark {
+  background-color: #4563F7;
+}
+html .light-theme .profile-container .profile-middlebox .ps .sections-box .locked-account-box .checkmark, body .light-theme .profile-container .profile-middlebox .ps .sections-box .locked-account-box .checkmark {
+  background-color: #d6d6d6;
+  border: 1px solid rgba(38, 35, 52, 0.15);
+}
+html .light-theme .profile-container .profile-middlebox .ps .sections-box .locked-account-box .checkmark::after, body .light-theme .profile-container .profile-middlebox .ps .sections-box .locked-account-box .checkmark::after {
+  border: solid #ffffff;
+}
+html .light-theme .profile-container .profile-middlebox .ps .sections-box .locked-account-box a, body .light-theme .profile-container .profile-middlebox .ps .sections-box .locked-account-box a {
+  color: #4563F7;
+  border: 1px solid rgba(38, 35, 52, 0.1);
+}
+html .light-theme .profile-container .profile-middlebox .ps .sections-box .inputs-box, body .light-theme .profile-container .profile-middlebox .ps .sections-box .inputs-box {
+  color: #0a111c;
+}
+html .light-theme .profile-container .profile-middlebox .ps .sections-box .inputs-box input, html .light-theme .profile-container .profile-middlebox .ps .sections-box .inputs-box select, html .light-theme .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea, body .light-theme .profile-container .profile-middlebox .ps .sections-box .inputs-box input, body .light-theme .profile-container .profile-middlebox .ps .sections-box .inputs-box select, body .light-theme .profile-container .profile-middlebox .ps .sections-box .inputs-box textarea {
+  background-color: #fff;
+  border: 1px solid rgba(38, 35, 52, 0.1);
+  color: #0a111c;
+}
+html .light-theme .profile-view-container, body .light-theme .profile-view-container {
+  background-color: rgba(248, 250, 252, 0.9);
+}
+html .light-theme .profile-view-container .profile-box, body .light-theme .profile-view-container .profile-box {
+  background-color: #f7f7f7;
+  border: 1px solid rgba(22, 22, 29, 0.085);
+  -o-box-shadow: 0px 0px 10px -3px rgba(38, 35, 52, 0.5);
+  box-shadow: 0px 0px 10px -3px rgba(38, 35, 52, 0.5);
+}
+html .light-theme .profile-view-container .profile-box .ps, body .light-theme .profile-view-container .profile-box .ps {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+}
+html .light-theme .profile-view-container .profile-box .ps .profile-names-holder, body .light-theme .profile-view-container .profile-box .ps .profile-names-holder {
+  border-bottom: 1px solid rgba(22, 22, 29, 0.085);
+}
+html .light-theme .profile-view-container .profile-box .ps .profile-names-holder .profile-name, body .light-theme .profile-view-container .profile-box .ps .profile-names-holder .profile-name {
+  color: #0a111c;
+}

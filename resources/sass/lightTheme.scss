@@ -1,0 +1,494 @@
+// Variables
+@import 'variables';
+@import 'mixs';
+
+html,body {
+    .light-theme {
+        .m_Container {
+            background-color: $body-bg;
+            .m_box {
+                .left-panel {
+                    background-color: #f3f3f3;
+                    border-right: 1px solid hsla(215, 49%, 7%, 0.1);
+                    @include box-shadow(1px,0px,8px,-5px,hsla(251, 20%, 17%, 0.5));
+                    .preferences-left-panel {
+                        span {
+                            color: $black;
+                        }
+                    }
+                    .middle-controls-box {
+                        .left-panel-innerbox {
+                            .icon-holder {
+                                span {
+                                    color: $black;
+                                }
+                                a{
+                                    span {
+                                        color: $black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .bottom-controls-box {
+                        .left-panel-innerbox {
+                            .icon-holder {
+                                span {
+                                    color: $black;
+                                }
+                                a {
+                                    span {
+                                        color: $black;
+                                    }
+                                }
+                            }
+                            form {
+                                button {
+                                    span {
+                                        color: $black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .messages-panel {
+                    .left-panel-viewer {
+                        background-color: #fff;
+                        border-right: 1px solid hsla(215, 49%, 7%, 0.1);
+                        .preferences {
+                            .panel-title {
+                                color: $black;
+                                border-bottom: 1px solid hsla(215, 49%, 7%, 0.1);
+                            }
+                            .preferences-innerbox {
+                                .preference-item-box {
+                                    .modesToggles {
+                                        form {
+                                            color: $black;
+                                            button {
+                                                background-color: hsla(0, 0%, 81%, 0.25);
+                                                border: 1px solid hsla(0, 0%, 81%, 0.25);
+                                                cursor: pointer;
+                                                span {
+                                                    background-color: $blue;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .searchbox-container {
+                            .ps {
+                                form {
+                                    input {
+                                        background-color: $body-bg;
+                                        color: $black;
+                                        border: 1px solid hsla(215, 49%, 7%, 0.1);
+                                    }
+                                }
+                                .people-listbox {
+                                    .people-list {
+                                        border-bottom: 1px solid hsla(215, 49%, 7%, 0.1);
+                                        &:hover {
+                                            background-color: $body-bg;
+                                        }
+                                        .people-names-holder {
+                                            span {
+                                                color: $black;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .contact-requests-list-container {
+                            .contacts-list {
+                                .contacts-list-tab-container {
+                                    .nav {
+                                        border-bottom: 1px solid hsla(215, 49%, 7%, 0.1);
+                                        li {
+                                            a {
+                                                color: $blue;
+                                            }
+                                            .active {
+                                                color: $eigengrau;
+                                            }
+                                        }
+                                    }
+                                    .contact-requests-tab-contents {
+                                        .wrapper {
+                                            .list-container {
+                                                border-bottom: 1px solid hsla(215, 49%, 7%, 0.1);
+                                                .list-holder {
+                                                    .list-item-names {
+                                                        span {
+                                                            color: $black;
+                                                        }
+                                                    }
+                                                    .list-item-controls-box {
+                                                        button {
+                                                            &:hover {
+                                                                background-color: $white;
+                                                            }
+                                                        }
+                                                        .more-options {
+                                                            @include box-shadow(1px,0px,8px,-5px,hsla(251, 20%, 17%, 0.5));
+                                                            border: 1px solid hsla(215, 49%, 7%, 0.1);
+                                                            a {
+                                                                color: $black;
+                                                                border-bottom: 1px solid hsla(215, 49%, 7%, 0.1);
+                                                            }
+                                                            form {
+                                                                border-bottom: 1px solid hsla(215, 49%, 7%, 0.1);
+                                                                button {
+                                                                    color: $black;
+                                                                    &:hover {
+                                                                        background-color: $body-bg;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .contacts-loader-waiter {
+                                            color: $black;
+                                        }
+                                        .unavailability {
+                                            color: $black;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .conversations__view {
+                            .ps {
+                                .loader {
+                                    svg {
+                                        circle {
+                                            stroke: $blue;
+                                        }
+                                    }
+                                }
+                                .conversations__list {
+                                    li {
+                                        a {
+                                            background-color: hsla(240, 14%, 10%, 0.025);
+                                            border: 1px solid hsla(240, 14%, 10%, 0.05);
+                                            @include box-shadow(2px,3px,10px,-8px,hsla(240, 14%, 10%, 0.5));
+                                            &:hover {
+                                                background-color: hsla(240, 14%, 10%, 0.05);
+                                                border: 1px solid hsla(240, 14%, 10%, 0.1);
+                                                @include box-shadow(2px,3px,10px,-6px,hsla(240, 14%, 10%, 0.5));
+                                            }
+                                            .conversations__box {
+                                                .item__info {
+                                                    span {
+                                                        color: $black;
+                                                    }
+                                                    .rmv__conversation {
+                                                        form {
+                                                            button {
+                                                                border: 1px solid hsla(240, 14%, 10%, 0.05);
+                                                                &:hover {
+                                                                    background-color: $red;
+                                                                    svg {
+                                                                        * {
+                                                                            fill: $white;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .empty__conversations {
+                                    color: $black;
+                                }
+                            }
+                        }
+                    }
+                    .middle-messages-viewer {
+                        .ss-container {
+                            .ss-box {
+                                background-color: $clouds;
+                                border: 1px solid hsla(215, 49%, 7%, 0.1);
+                                @include box-shadow(0px,0px,12px,-8px,hsla(251, 20%, 17%, 0.5));
+                                .settingsHeader {
+                                    color: $black;
+                                }
+                                form {
+                                    .formInputs {
+                                        label {
+                                            color: $black;
+                                        }
+                                        input {
+                                            background-color: $body-bg;
+                                            color: $black;
+                                            border: 1px solid hsla(215, 49%, 7%, 0.1);
+                                            @include box-shadow(0px,0px,15px,-8px,hsla(250, 20%, 17%, 0.5));
+                                            &:focus {
+                                                background-color: $white;
+                                                @include box-shadow(0px,0px,15px,-8px,$blue);
+                                            }
+                                            &:invalid:focus {
+                                                @include box-shadow(0px,0px,15px,-8px,$red);
+                                            }
+                                            &:invalid {
+                                                @include box-shadow(0px,0px,15px,-8px,$red);
+                                            }
+                                            &:-moz-submit-invalid {
+                                                @include box-shadow(0px,0px,15px,-8px,$red);
+                                            }
+                                        }
+                                        .current__email {
+                                            color: $green;
+                                        }
+                                        .errors__box, .response__box {
+                                            .errors, .response {
+                                                color: $red;
+                                            }
+                                        }
+                                        .response__box {
+                                            .response {
+                                                color: $green;
+                                            }
+                                        }
+                                        button {
+                                            background-color: transparent;
+                                            color: $blue;
+                                        }
+                                    }
+                                    .loader {
+                                        svg {
+                                            circle {
+                                                stroke: $blue;
+                                            }
+                                        }
+                                    }
+                                    p.errors {
+                                        color: $red;
+                                    }
+                                    p.success {
+                                        color: $green;
+                                    }
+                                }
+                                .qrCode__container {
+                                    .qrCode__descriptions {
+                                        color: $black;
+                                    }
+                                }
+                                .twoFa__recovery__codes {
+                                    color: $black;
+                                    ul {
+                                        background-color: hsla(240, 14%, 10%, 0.025);
+                                        border: 1px solid hsla(240, 14%, 10%, 0.1);
+                                    }
+                                }
+                            }
+                            .account__delete__warning {
+                                background-color: hsla(0, 0%, 100%, 0.85);
+                                .account__delete__popup {
+                                    background-color: hsla(240, 14%, 10%, 0.04);
+                                    border: 1px solid hsla(240, 14%, 10%, 0.05);
+                                    @include box-shadow(-1px,0px,8px,-5px,hsla(251, 20%, 17%, 0.5));
+                                    .alert__title {
+                                        color: $black;
+                                    }
+                                    .alert__message {
+                                        color: $black;
+                                    }
+                                    .alert__controls {
+                                        position: relative;
+                                        @include csize(100%,auto);
+                                        form {
+                                            button {
+                                                background-color: $red;
+                                                color: $white;
+                                                &:nth-child(1) {
+                                                    background-color: $green;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .security__settings__save__alert {
+                                background-color: hsla(210, 40%, 98%, 0.95);
+                                .security__settings__save {
+                                    border: 1px solid hsla(217, 47%, 7%, 0.1);
+                                    form {
+                                        position: relative;
+                                        @include csize(100%,auto);
+                                        .password__confirm__inputs {
+                                            background-color: hsla(217, 47%, 7%, 0.0015);
+                                            .form__title {
+                                                background-color: #f2f5f8;
+                                                border-bottom: 1px solid hsla(217, 47%, 7%, 0.1);
+                                                color: $black;
+                                            }
+                                            .form__descriptions {
+                                                color: $black;
+                                            }
+                                            .form__buttons {
+                                                input {
+                                                    color: $black;
+                                                    border: 1px solid hsla(217, 47%, 7%, 0.07);
+                                                }
+                                                div {
+                                                    button {
+                                                        background-color: $blue;
+                                                        color: $white;
+                                                        &:first-child {
+                                                            background-color: $green;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .response__box {
+                                                .error {
+                                                    color: $red;
+                                                }
+                                                .response {
+                                                    color: $green;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .right-panel-viewer {
+                        background-color: #fff;
+                        border-left: 1px solid hsla(215, 49%, 7%, 0.1);
+                        .profile-overview {
+                            .profile-name-box {
+                                .profile-name {
+                                    color: $black;
+                                }
+                            }
+                            .profile-user-descriptions {
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+                .right-panel {
+                    background-color: #f3f3f3;
+                    border-left: 1px solid hsla(215, 49%, 7%, 0.1);
+                    @include box-shadow(-1px,0px,8px,-5px,hsla(251, 20%, 17%, 0.5));
+                }
+            }
+        }
+        .errors-container {
+            background-color: hsla(210, 40%, 98%, 0.9);
+            .errors-popup {
+                background-color: #f3f3f3;
+                border: 1px solid hsla(215, 49%, 7%, 0.1);
+                .error-heading {
+                    border-bottom: 1px solid hsla(215, 49%, 7%, 0.1);
+                    strong {
+                        color: $black;
+                    }
+                }
+                .error-body {
+                    p {
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .profile-container {
+            background-color: hsla(210, 40%, 98%, 0.9);
+            .profile-middlebox {
+                background-color: #f7f7f7;
+                border: 1px solid #f3f3f3;
+                @include box-shadow(0px,0px,10px,-3px,hsla(250, 20%, 17%, 0.5));
+                .updating-layer {
+                    background-color: hsla(210, 40%, 98%, 0.9);
+                }
+                .ps {
+                    position: relative;
+                    @include fsize;
+                    .profile-pic-box-holder {
+                        border-bottom: 1px solid hsla(250, 20%, 17%, 0.1);
+                        .profile-pic-box {
+                            background-color: #fff;
+                            border: 1px solid hsla(250, 20%, 17%, 0.1);
+                        }
+                        .profile-name-box {
+                            input {
+                                background-color: #fff;
+                                border: 1px solid hsla(250, 20%, 17%, 0.1);
+                                color: $black;
+                            }
+                        }
+                    }
+                    .sections-box {
+                        .section-title {
+                            color: $black;
+                        }
+                        .locked-account-box {
+                            &:hover {
+                                input ~ .checkmark {
+                                    background-color: rgb(177, 177, 177);
+                                }
+                            }
+                            input {
+                                &:checked ~ .checkmark {
+                                    background-color: $blue;
+                                }
+                            }
+                            .checkmark {
+                                background-color: #d6d6d6;
+                                border: 1px solid hsla(250, 20%, 17%, 0.15);
+                                &::after {
+                                    border: solid $white;
+                                }
+                            }
+                            a {
+                                color: $blue;
+                                border: 1px solid hsla(250, 20%, 17%, 0.1);
+                            }
+                        }
+                        .inputs-box {
+                            color: $black;
+                            input, select, textarea {
+                                background-color: #fff;
+                                border: 1px solid hsla(250, 20%, 17%, 0.1);
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .profile-view-container {
+            background-color: hsla(210, 40%, 98%, 0.9);
+            .profile-box {
+                background-color: #f7f7f7;
+                border: 1px solid hsla(240, 14%, 10%, 0.085);
+                @include box-shadow(0px,0px,10px,-3px,hsla(250, 20%, 17%, 0.5));
+                .ps {
+                    position: relative;
+                    @include fsize;
+                    padding: 8px;
+                    .profile-names-holder {
+                        border-bottom: 1px solid hsla(240, 14%, 10%, 0.085);
+                        .profile-name {
+                            color: $black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

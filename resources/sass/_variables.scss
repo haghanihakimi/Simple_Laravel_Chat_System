@@ -1,0 +1,35 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap');
+
+
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$Noto-font: 'Noto Sans TC', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+%Spline-Sans {
+    font-family: 'Spline Sans', sans-serif;
+}
+%Signika {
+    font-family: 'Signika', sans-serif;
+}
+
+// Colors
+$blue: #4563F7;
+$warm-blue: #1544c0;
+$purple: #5745f7;
+$warm-purple: #214fc6;
+$cold-blue: hsl(230, 83%, 66%);
+$red: #e3342f;
+$orange: #f6993f;
+$green: #0ea785;
+$teal: #4dc0b5;
+$white: #ffffff;
+$black: #0a111c;
+$darkest-blue: #262335;
+$eigengrau: #16161d;
+/* Clouds */
+$clouds: #fbfbfb85;

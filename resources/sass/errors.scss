@@ -1,0 +1,98 @@
+// Variables
+@import 'variables';
+@import 'mixs';
+
+html,body {
+    #app {
+        .errors-container {
+            position: fixed;
+            @include fsize;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9;
+            @include backblur(50px);
+            overflow: hidden;
+            .errors-popup {
+                position: relative;
+                margin: auto;
+                @include csize(100%,fit-content);
+                @include cmax-size(720px,auto);
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                border-radius: 4px;
+                .error-heading {
+                    position: relative;
+                    padding: 12px;
+                    text-align: left;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    strong {
+                        font-size: 18px;
+                        letter-spacing: 1px;
+                        @extend %Spline-Sans;
+                        @include user-select(none);
+                        @include text-transform(capitalize);
+                    }
+                }
+                .error-body {
+                    padding: 6px;
+                    position: relative;
+                    @include csize(100%,fit-content);
+                    p {
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                        font-weight: 500;
+                        padding: 6px;
+                        margin: auto 0 auto 0;
+                        @extend %Spline-Sans;
+                    }
+                }
+                .error-footer {
+                    position: relative;
+                    @include csize(100%,fit-content);
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding: 12px 24px 12px 24px;
+                    button {
+                        background-color: $blue;
+                        padding: 12px;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 16px;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        color: $body-bg;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        border: none;
+                        @extend %Spline-Sans;
+                        @include user-select(none);
+                        @include easings(100ms);
+                        @include text-transform(capitalize);
+                        &:active {
+                            background-color: $purple;
+                        }
+                    }
+                }
+            }
+        }
+        .errors_inactive {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+        }
+        .errors_active {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+    }
+}

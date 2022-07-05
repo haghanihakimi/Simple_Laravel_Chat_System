@@ -1,0 +1,421 @@
+// Variables
+@import 'variables';
+@import 'mixs';
+
+html,body {
+    @keyframes loading {
+        from {
+            stroke-dasharray: 3000;
+        }
+        to {
+            stroke-dasharray: 200;
+        }
+    }
+    .m_Container {
+        .m_box {
+            .messages-panel {
+                .middle-messages-viewer {
+                    padding: 16px;
+                    .ss-container {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        @include fsize;
+                        overflow: auto;
+                        overflow-x: hidden;
+                        @keyframes popupSettings {
+                            0% {
+                                opacity: 0;
+                                @include scale(0.95,0.95);
+                            }
+                            50% {
+                                opacity: 0.5;
+                                @include scale(1.05,1.05);
+                            }
+                            100% {
+                                opacity: 1;
+                                @include scale(1.0,1.0);
+                            }
+                        }
+                        .ss-box {
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            overflow: hidden !important;
+                            @include csize(100%,auto);
+                            @include cmax-size(468px,auto);
+                            gap: 0;
+                            margin: auto;
+                            border-radius: 4px;
+                            @include animation (popupSettings,300ms,0ms,1,ease-in,alternate);
+                            @include user-select(none);
+                            .settingsHeader {
+                                padding: 8px;
+                                @extend %Spline-Sans;
+                                font-size: 20px;
+                                font-weight: 600;
+                                letter-spacing: 1px;
+                                text-align: center;
+                            }
+                            form {
+                                position: relative;
+                                @include csize(100%,auto);
+                                padding: 0 8px 0 8px;
+                                &:last-child {
+                                    padding: 8px;
+                                    .formInputs {
+                                        button {
+                                            color: $red !important;
+                                        }
+                                    }
+                                }
+                                .formInputs {
+                                    position: relative;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 0;
+                                    @include csize(auto,auto);
+                                    label {
+                                        @extend %Spline-Sans;
+                                        font-size: 15px;
+                                        letter-spacing: 1px;
+                                        padding: 8px 12px 6px 12px;
+                                    }
+                                    input {
+                                        position: relative;
+                                        @include csize(100%,32px);
+                                        @include cmax-size(360px,auto);
+                                        padding: 8px;
+                                        margin: auto auto 8px 0;
+                                        font-size: 15px;
+                                        letter-spacing: 1px;
+                                        @extend %Spline-Sans;
+                                        font-weight: 600;
+                                        border-radius: 4px;
+                                    }
+                                    .current__email {
+                                        @extend %Spline-Sans;
+                                        font-size: 14px;
+                                        letter-spacing: 1px;
+                                        font-weight: 600;
+                                        padding: 6px;
+                                        text-align: left;
+                                        margin: 0;
+                                        @include user-select(text);
+                                    }
+                                    .errors__box, .response__box {
+                                        position: relative;
+                                        @include csize(100%,auto);
+                                        @include user-select(text);
+                                        .errors, .response {
+                                            @extend %Spline-Sans;
+                                            font-size: 12px;
+                                            letter-spacing: 1px;
+                                            font-weight: 600;
+                                            padding: 6px;
+                                            text-align: left;
+                                            margin: 0;
+                                        }
+                                    }
+                                    .response__box {
+                                        .response {
+                                            @include user-select(text);
+                                        }
+                                    }
+                                    @keyframes buttonPops {
+                                        0% {
+                                            @include scale(0.95,0.95);
+                                            opacity: 0;
+                                            font-weight: 500;
+                                        }
+                                        50% {
+                                            @include scale(1.05,1.05);
+                                            opacity: 0.5;
+                                            font-weight: 800;
+                                        }
+                                        100% {
+                                            @include scale(1.0,1.0);
+                                            opacity: 1;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                    button {
+                                        display: block;
+                                        font-size: 15px;
+                                        letter-spacing: 1px;
+                                        font-weight: 600;
+                                        padding: 8px;
+                                        text-align: left;
+                                        @include csize(fit-content,36px);
+                                        border: none;
+                                        cursor: pointer;
+                                        @extend %Spline-Sans;
+                                        opacity: 1;
+                                        @include scale(1.0,1.0);
+                                        @include animation (buttonPops,120ms,0ms,1,ease-in-out,alternate);
+                                    }
+                                }
+                                .loader {
+                                    display: block;
+                                    position: relative;
+                                    @include csize(28px,28px);
+                                    margin: auto;
+                                    padding: 0;
+                                    border-radius: 720px;
+                                    @include rotate(0deg);
+                                    svg {
+                                        margin: auto;
+                                        @include fsize;
+                                        position: relative;
+                                        @include rotate(270deg);
+                                        circle {
+                                            fill: none;
+                                            stroke-width: 60px;
+                                            stroke-dasharray: 200;
+                                            stroke-dashoffset: 3000;
+                                            @include animation (loading,2s,0ms,infinite,ease-in-out,alternate);
+                                        }
+                                    }
+                                }
+                                p {
+                                    letter-spacing: 1px;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    @extend %Spline-Sans;
+                                    padding: 0 8px 8px 8px;
+                                    text-align: left;
+                                    @include csize(100%,auto);
+                                }
+                            }
+                            .qrCode__container {
+                                position: relative;
+                                @include csize(100%,fit-content);
+                                padding: 24px;
+                                .qrCode__descriptions {
+                                    position: relative;
+                                    padding: 0;
+                                    margin: 0 0 12px 0;
+                                    text-align: left;
+                                    font-size: 15px;
+                                    letter-spacing: 1px;
+                                    font-weight: 500;
+                                    @extend %Spline-Sans;
+                                }
+                                .qrCode__view {
+                                    @include csize(auto,100%);
+                                    @include cmax-size(auto, 150px);
+                                    display: block;
+                                    svg {
+                                        position: relative;
+                                        @include csize(auto,100%);
+                                        @include cmax-size(auto, 150px);
+                                        margin: auto auto auto 0 !important;
+                                    }
+                                }
+                            }
+                            .twoFa__recovery__codes {
+                                position: relative;
+                                @include csize(100%,auto);
+                                padding: 8px;
+                                @include user-select(text);
+                                font-size: 14px;
+                                font-weight: 500;
+                                @extend %Spline-Sans;
+                                letter-spacing: 1px;
+                                p {
+                                    padding: 8px;
+                                    font-weight: 600;
+                                }
+                                ul {
+                                    list-style: none;
+                                    padding: 0;
+                                    margin: 0;
+                                    border-radius: 4px;
+                                    li {
+                                        display: block;
+                                        padding: 8px;
+                                    }
+                                }
+                            }
+                        }
+                        .account__delete__warning {
+                            position: fixed;
+                            @include fsize;
+                            display: flex;
+                            @include backblur(25px);
+                            top: 0;
+                            left: 0;
+                            padding: 24px;
+                            z-index: 9;
+                            overflow: auto;
+                            overflow-x: hidden;
+                            .account__delete__popup {
+                                position: relative;
+                                @include csize(100%,auto);
+                                @include cmax-size(400px,auto);
+                                padding: 12px;
+                                margin: auto;
+                                border-radius: 4px;
+                                .alert__title {
+                                    position: relative;
+                                    font-weight: 600;
+                                    font-size: 17px;
+                                    letter-spacing: 1px;
+                                    @extend %Spline-Sans;
+                                    padding: 5px;
+                                    margin: 0;
+                                    text-align: left;
+                                }
+                                .alert__message {
+                                    @extend %Spline-Sans;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    padding: 5px;
+                                    letter-spacing: 1px;
+                                    margin: left;
+                                    text-align: left;
+                                    line-height: 25px;
+                                }
+                                .alert__controls {
+                                    position: relative;
+                                    @include csize(100%,auto);
+                                    form {
+                                        display: flex;
+                                        flex-direction: row;
+                                        gap: 8px;
+                                        flex-flow: row wrap;
+                                        flex-wrap: wrap;
+                                        justify-content: flex-end;
+                                        align-items: center;
+                                        @include fsize;
+                                        button {
+                                            position: relative;
+                                            @include csize(auto,auto);
+                                            @include cmin-size(150px,auto);
+                                            padding: 8px;
+                                            @extend %Spline-Sans;
+                                            font-size: 15px;
+                                            letter-spacing: 1px;
+                                            border-radius: 4px;
+                                            flex: 1;
+                                            border: none;
+                                        }
+                                        .inActive {
+                                            opacity: 0.5;
+                                            cursor: default;
+                                        }
+                                        .active {
+                                            opacity: 1;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .security__settings__save__alert {
+                            position: fixed;
+                            @include fsize;
+                            z-index: 9;
+                            top: 0;
+                            left: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            @include backblur(25px);
+                            .security__settings__save {
+                                position: relative;
+                                display: block;
+                                @include csize(100%,auto);
+                                @include cmax-size(480px,auto);
+                                border-radius: 4px;
+                                form {
+                                    position: relative;
+                                    @include csize(100%,auto);
+                                    .password__confirm__inputs {
+                                        position: relative;
+                                        @include csize(100%,auto);
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 16px;
+                                        .form__title {
+                                            border-top-right-radius: 4px;
+                                            border-top-left-radius: 4px;
+                                            font-size: 17px;
+                                            padding: 12px;
+                                            font-weight: 500;
+                                            letter-spacing: 1px;
+                                            @extend %Spline-Sans;
+                                        }
+                                        .form__descriptions {
+                                            font-size: 14px;
+                                            padding: 0 8px 0 8px;
+                                            font-weight: 500;
+                                            letter-spacing: 1px;
+                                            @extend %Spline-Sans;
+                                        }
+                                        .form__buttons {
+                                            padding: 0 8px 8px 8px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 16px;
+                                            input {
+                                                font-size: 15px;
+                                                font-weight: 500;
+                                                letter-spacing: 1px;
+                                                @extend %Spline-Sans;
+                                                padding: 8px;
+                                                border-radius: 4px;
+                                            }
+                                            div {
+                                                padding: 0 8px 8px 8px;
+                                                display: flex;
+                                                flex-direction: row;
+                                                flex-flow: row wrap;
+                                                flex-wrap: wrap;
+                                                justify-content: center;
+                                                align-items: center;
+                                                gap: 12px;
+                                                button {
+                                                    padding: 8px;
+                                                    text-align: center;
+                                                    display: block;
+                                                    @include csize(fit-content,auto);
+                                                    @include cmax-size(160px,auto);
+                                                    @include cmin-size(150px,auto);
+                                                    border-radius: 4px;
+                                                    font-size: 15px;
+                                                    font-weight: 500;
+                                                    letter-spacing: 1px;
+                                                    @extend %Spline-Sans;
+                                                    border: none;
+                                                    cursor: pointer;
+                                                }
+                                            }
+                                        }
+                                        .response__box {
+                                            letter-spacing: 1px;
+                                            font-size: 15px;
+                                            font-weight: 500;
+                                            @extend %Spline-Sans;
+                                            padding: 0 12px 12px 12px;
+                                            text-align: left;
+                                            @include csize(100%,auto);
+                                            display: inline-block;
+                                            .error {
+                                                display: inline-block;
+                                            }
+                                            .response {
+                                                display: inline-block;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

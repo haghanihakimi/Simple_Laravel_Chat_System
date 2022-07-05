@@ -1,0 +1,43 @@
+// Variables
+@import 'variables';
+@import 'mixs';
+
+html,body {
+  @include fsize;
+  overflow: hidden;
+  .container-layer {
+    background-image: url('/storage/locals/Circles2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    @include fsize;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: blur(28px);
+    -webkit-filter: blur(50px);
+    @include scale(1.5,1.5);
+    z-index: 0;
+  }
+  .container {
+    background-color: hsla(0, 100%, 100%, 0.95);
+    @include fsize;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: auto;
+    overflow-x: hidden;
+    .container-box {
+      position: relative;
+      @include csize(100%,auto);
+      padding: 12px 12px 32px 12px;
+      @import 'GuestNavigation';
+      @import 'HomeSectionOne';
+      @import 'HomeSectionTwo';
+      @import 'HomePricingSection';
+    }
+    @import 'footer';
+  }
+}

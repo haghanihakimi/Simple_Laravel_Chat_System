@@ -1,0 +1,205 @@
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .empty__conversations, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .empty__conversations, html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__info span, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__info span {
+  font-family: "Spline Sans", sans-serif;
+}
+
+/* Clouds */
+html .m_Container .m_box .messages-panel .left-panel-viewer, body .m_Container .m_box .messages-panel .left-panel-viewer {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-height: auto;
+}
+@-webkit-keyframes loading {
+  from {
+    stroke-dasharray: 3000;
+  }
+  to {
+    stroke-dasharray: 200;
+  }
+}
+@keyframes loading {
+  from {
+    stroke-dasharray: 3000;
+  }
+  to {
+    stroke-dasharray: 200;
+  }
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .loader, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .loader {
+  display: block;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  margin: auto;
+  padding: 0;
+  border-radius: 720px;
+  transform: rotate(0deg);
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .loader svg, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .loader svg {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: rotate(270deg);
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .loader svg circle, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .loader svg circle {
+  fill: none;
+  stroke-width: 60px;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 3000;
+  -webkit-animation: loading 2s ease-in-out 0ms infinite alternate;
+  animation: loading 2s ease-in-out 0ms infinite alternate;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li {
+  list-style: block;
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li:last-child, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li:last-child {
+  margin: 0;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a {
+  text-decoration: none;
+  padding: 12px;
+  margin: 0;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: all 120ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  border-radius: 4px;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 6px;
+  width: 100%;
+  height: auto;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box:hover .rmv__conversation, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box:hover .rmv__conversation {
+  display: flex;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__image, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__image {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__image img, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 720px;
+  margin: auto;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__info, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__info span, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .item__info span {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .rmv__conversation, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .rmv__conversation {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  margin: auto 0 auto auto;
+  border-radius: 4px;
+  cursor: pointer;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .rmv__conversation form, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .rmv__conversation form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .rmv__conversation form button, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .rmv__conversation form button {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  border-radius: 4px;
+  display: flex;
+  border: none;
+  margin: auto;
+  cursor: pointer;
+  transition: all 120ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .rmv__conversation form button svg, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .conversations__list li a .conversations__box .rmv__conversation form button svg {
+  position: relative;
+  width: 11px;
+  height: 11px;
+  max-width: 11px;
+  max-height: 11px;
+  margin: auto;
+  transition: all 120ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .empty__conversations, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .empty__conversations {
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #0a111c;
+  opacity: 0.75;
+  padding: 8px;
+  text-align: center;
+  margin: auto;
+  -webkit-text-transform: capitalize;
+  -moz-text-transform: capitalize;
+  -o-text-transform: capitalize;
+  -ms-text-transform: capitalize;
+  text-transform: capitalize;
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .fade-move, html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .fade-enter-active, html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .fade-leave-active, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .fade-move, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .fade-enter-active, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .fade-leave-active {
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .fade-enter-from, html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .fade-leave-to, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .fade-enter-from, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .fade-leave-to {
+  opacity: 0;
+  transform: scaleY(0.01) translate(30px, 0);
+}
+html .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .fade-leave-active, body .m_Container .m_box .messages-panel .left-panel-viewer .conversations__view .ps .fade-leave-active {
+  position: absolute;
+}

@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+html #app .contact-block-remove-alert .alert-box .alert-footer form button, body #app .contact-block-remove-alert .alert-box .alert-footer form button, html #app .contact-block-remove-alert .alert-box .alert-body p, body #app .contact-block-remove-alert .alert-box .alert-body p, html #app .contact-block-remove-alert .alert-box .alert-title *, body #app .contact-block-remove-alert .alert-box .alert-title * {
+  font-family: "Spline Sans", sans-serif;
+}
+
+/* Clouds */
+html #app .contact-block-remove-alert, body #app .contact-block-remove-alert {
+  background-color: rgba(248, 250, 252, 0.9);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(15px);
+  -moz-backdrop-filter: blur(15px);
+  -o-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  z-index: 9;
+  overflow: hidden;
+}
+html #app .contact-block-remove-alert .alert-box, body #app .contact-block-remove-alert .alert-box {
+  background-color: #fbfbfb85;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 720px;
+  max-height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  border: 1px solid rgba(9, 16, 27, 0.1);
+  -o-box-shadow: -1px 0px 8px -5px rgba(38, 35, 52, 0.5);
+  box-shadow: -1px 0px 8px -5px rgba(38, 35, 52, 0.5);
+}
+html #app .contact-block-remove-alert .alert-box .alert-title, body #app .contact-block-remove-alert .alert-box .alert-title {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  border-bottom: 1px solid rgba(9, 16, 27, 0.1);
+}
+html #app .contact-block-remove-alert .alert-box .alert-title *, body #app .contact-block-remove-alert .alert-box .alert-title * {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #0a111c;
+  padding: 12px;
+  text-align: left;
+  margin: auto;
+  font-weight: 600;
+  -webkit-text-transform: capitalize;
+  -moz-text-transform: capitalize;
+  -o-text-transform: capitalize;
+  -ms-text-transform: capitalize;
+  text-transform: capitalize;
+}
+html #app .contact-block-remove-alert .alert-box .alert-body, body #app .contact-block-remove-alert .alert-box .alert-body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+html #app .contact-block-remove-alert .alert-box .alert-body p, body #app .contact-block-remove-alert .alert-box .alert-body p {
+  position: relative;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #0a111c;
+  font-weight: 500;
+  padding: 8px;
+  margin: 0;
+  text-align: left;
+}
+html #app .contact-block-remove-alert .alert-box .alert-footer, body #app .contact-block-remove-alert .alert-box .alert-footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+html #app .contact-block-remove-alert .alert-box .alert-footer form, body #app .contact-block-remove-alert .alert-box .alert-footer form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  gap: 12px;
+  padding: 12px;
+}
+html #app .contact-block-remove-alert .alert-box .alert-footer form button, body #app .contact-block-remove-alert .alert-box .alert-footer form button {
+  min-width: 100px;
+  min-height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-text-transform: capitalize;
+  -moz-text-transform: capitalize;
+  -o-text-transform: capitalize;
+  -ms-text-transform: capitalize;
+  text-transform: capitalize;
+}
+html #app .contact-block-remove-alert .alert-box .alert-footer form button:first-child, body #app .contact-block-remove-alert .alert-box .alert-footer form button:first-child {
+  background-color: #0ea785;
+}
+html #app .contact-block-remove-alert .alert-box .alert-footer form button:last-child, body #app .contact-block-remove-alert .alert-box .alert-footer form button:last-child {
+  background-color: #e3342f;
+}

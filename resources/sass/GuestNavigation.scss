@@ -1,0 +1,108 @@
+.navigation {
+  position: relative;
+  padding: 24px 45px 24px 64px;
+  @include csize(100%,fit-content);
+  @include user-select(none);
+  .nav {
+    @include fsize;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    .logo {
+      position: relative;
+      display: inline-block;
+      @include csize(auto,100%);
+      a {
+        text-decoration: none;
+        padding: 0;
+        margin: auto auto auto 0;
+        display: inline-block;
+        @include csize(auto,100%);
+        img {
+          object-fit: cover;
+          @include csize(auto,60px);
+          position: relative;
+        }
+      }
+    }
+    .menu-container {
+      position: relative;
+      @include csize(100%,65px);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .nav-menu {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        display: inline-block;
+        @include csize(fit-content,fit-content);
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0 64px 0 0;
+          li {
+            display: inline-block;
+            &:last-child a {
+              background-color: $blue;
+              border-radius: 720px;
+              color: $white;
+              @include easings(300ms);
+              @include csize(157px,auto);
+              &::after {
+                content: '';
+                opacity: 0;
+                position: absolute;
+                background-color: $orange;
+                @include csize(0,100%);
+                top: 0 !important;
+                left: 0 !important;
+                @include easings(300ms);
+                z-index: 0;
+                @include text-transform(capitalize);
+                border-radius: 720px;
+                @include translateY(0);
+              }
+              &:hover {
+                color: $black;
+                letter-spacing: 1.5px;
+                &::after {
+                  opacity: 1;
+                  @include fsize;
+                }
+              }
+            }
+            &:nth-last-child(2) {
+              padding-right: 24px;
+            }
+            a {
+              display: inline-block;
+              position: relative;
+              padding: 12px;
+              margin: auto 0 auto auto;
+              @extend %Spline-Sans;
+              color: $black;
+              font-weight: 600;
+              letter-spacing: 0.75px;
+              @include text-transform(uppercase);
+              text-decoration: none;
+              @include easings(250ms);
+              font-size: 15px;
+              text-align: center;
+              span {
+                position: relative;
+                z-index: 1;
+              }
+            }
+          }
+        }
+
+        @include phone (940px) { 
+          ul {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

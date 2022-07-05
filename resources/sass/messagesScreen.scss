@@ -1,0 +1,366 @@
+// Variables
+@import 'variables';
+@import 'mixs';
+
+// Variables
+@import 'variables';
+@import 'mixs';
+
+html,body {
+    @keyframes loading {
+        from {
+            stroke-dasharray: 3000;
+        }
+        to {
+            stroke-dasharray: 200;
+        }
+    }
+    .m_Container {
+        .m_box {
+            .messages-panel {
+                .middle-messages-viewer {
+                    .messages-screen {
+                        position: relative;
+                        @include fsize;
+                        overflow: hidden;
+                        @include cmax-size(100%,auto);
+                        .ms-top-heading {
+                            background-color: $body-bg;
+                            position: absolute;
+                            @include csize(100%,40px);
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            z-index: 1;
+                            border-bottom: 1px solid hsla(240, 14%, 10%, 0.07);
+                            @include user-select(none);
+                            .heading-username-box {
+                                display: block;
+                                @include csize(fit-content, 100%);
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 0 24px 0 24px;
+                                @extend %Spline-Sans;
+                                font-size: 16px;
+                                letter-spacing: 1px;
+                                color: $black;
+                                font-weight: 600;
+                                span {
+                                    margin: auto;
+                                    display: inline-block;
+                                }
+                                .locked {
+                                    background-position: center;
+                                    position: relative;
+                                    @include csize(18px,18px);
+                                    display: inline-flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin: auto;
+                                    cursor: pointer;
+                                    svg {
+                                        margin: auto;
+                                        position: relative;
+                                        @include csize(16px,16px);
+                                        * {
+                                            fill: $green;
+                                        }
+                                    }
+                                }
+                                .loader {
+                                    display: block;
+                                    position: relative;
+                                    @include csize(28px,28px);
+                                    margin: auto;
+                                    padding: 0;
+                                    border-radius: 720px;
+                                    @include rotate(0deg);
+                                    svg {
+                                        margin: auto;
+                                        @include fsize;
+                                        position: relative;
+                                        @include rotate(270deg);
+                                        circle {
+                                            fill: none;
+                                            stroke: $blue;
+                                            stroke-width: 60px;
+                                            stroke-dasharray: 200;
+                                            stroke-dashoffset: 3000;
+                                            @include animation (loading,2s,0ms,infinite,ease-in-out,alternate);
+                                        }
+                                    }
+                                }
+                            }
+                            .heading-toolsToggle {
+                                position: relative;
+                                @include csize(40px,40px);
+                                margin: 0 24px 0 0;
+                                display: flex;
+                                button {
+                                    position: relative;
+                                    @include fsize;
+                                    border: none;
+                                    padding: 0;
+                                    background-color: transparent;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+                                    svg {
+                                        margin: auto;
+                                        position: relative;
+                                        @include csize(60%,60%);
+                                        * {
+                                            fill: $blue;
+                                        }
+                                    }
+                                }
+                                @keyframes toggleMoreOptions {
+                                    0% {
+                                        opacity: 0;
+                                        @include scale(0.95,0.95);
+                                    }
+                                    50% {
+                                        opacity: 1;
+                                        @include scale(1.05,1.05);
+                                    }
+                                    100% {
+                                        opacity: 1;
+                                        @include scale(1.0,1.0);
+                                    }
+                                }
+                                .heading-moreOptions {
+                                    background-color: $clouds;
+                                    position: absolute;
+                                    top: 40px;
+                                    right: 0;
+                                    padding: 6px;
+                                    @include scale(1.0,1.0);
+                                    border-radius: 4px;
+                                    border: 1px solid hsla(240, 14%, 10%, 0.075);
+                                    @include csize(auto,auto);
+                                    @include animation (toggleMoreOptions,100ms,0ms,1,ease-in,alternate);
+                                    @include box-shadow(-1px,0px,8px,-5px,hsla(251, 20%, 17%, 0.5));
+                                    .moreOptions {
+                                        position: relative;
+                                        @include csize(100%,auto);
+                                        @include cmin-size(140px,auto);
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 0;
+                                        form {
+                                            position: relative;
+                                            @include csize(auto,auto);
+                                            padding: 0;
+                                            display: block;
+                                            @include easings(200ms);
+                                            border-radius: 4px;
+                                            border-bottom: 1px solid hsla(210, 40%, 98%, 0.07);
+                                            &:last-child {
+                                                border: none;
+                                            }
+                                            &:hover {
+                                                background-color: #fff;
+                                            }
+                                            button {
+                                                background-color: transparent;
+                                                @include cmin-size(auto,auto);
+                                                display: block;
+                                                border-radius: 0;
+                                                @extend %Spline-Sans;
+                                                font-size: 15px;
+                                                letter-spacing: 1px;
+                                                cursor: pointer;
+                                                color: $black;
+                                                padding: 8px;
+                                                word-break: keep-all;
+                                                word-wrap: normal;
+                                            }
+                                        }
+                                    }
+                                }
+                                .activeMoreOptions {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 6px;
+                                    opacity: 1;
+                                }
+                                .inActiveMoreOptions {
+                                    display: none !important;
+                                    opacity: 0 !important;
+                                    visibility: hidden !important;
+                                }
+                                .loader {
+                                    display: block;
+                                    position: relative;
+                                    @include csize(28px,28px);
+                                    margin: auto;
+                                    padding: 0;
+                                    border-radius: 720px;
+                                    @include rotate(0deg);
+                                    svg {
+                                        margin: auto;
+                                        @include fsize;
+                                        position: relative;
+                                        @include rotate(270deg);
+                                        circle {
+                                            fill: none;
+                                            stroke: $blue;
+                                            stroke-width: 60px;
+                                            stroke-dasharray: 200;
+                                            stroke-dashoffset: 3000;
+                                            @include animation (loading,2s,0ms,infinite,ease-in-out,alternate);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .ms-body-content {
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            @include fsize;
+                            padding: 40px 0 55px 0;
+                            z-index: 0;
+                            .ps {
+                                position: relative;
+                                @include fsize;
+                                .chat-bubble-container {
+                                    position: relative;
+                                    @include csize(100%,auto);
+                                    padding: 12px;
+                                    .chat-bubble-box {
+                                        background-color: hsla(230, 92%, 62%, 1);
+                                        position: relative;
+                                        display: block;
+                                        @include csize(fit-content, auto);
+                                        @include cmax-size(848px,auto);
+                                        border-radius: 6px;
+                                        padding: 12px;
+                                        .chat-bubble-contents {
+                                            @extend %Spline-Sans;
+                                            font-size: 15px;
+                                            letter-spacing: 1px;
+                                            font-weight: 600;
+                                            color: $white;
+                                            @include csize(100%,auto);
+                                        }
+                                        .chat-timestamps {
+                                            display: block;
+                                            margin: 6px 0 0 0;
+                                            font-size: 11px;
+                                            @extend %Spline-Sans;
+                                            letter-spacing: 1px;
+                                            font-weight: 400;
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                                .sender {
+                                    direction: rtl;
+                                }
+                                .receiver {
+                                    direction: ltr;
+                                }
+                            }
+                            .msg-textbox-container {
+                                background-color: #fff;
+                                position: absolute;
+                                @include csize(100%,50px);
+                                bottom: 0;
+                                left: 0;
+                                display: flex;
+                                border-top: 1px solid hsla(215, 49%, 7%, 0.1);
+                                form {
+                                    background-color: #fff;
+                                    position: relative;
+                                    @include fsize;
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: flex-end;
+                                    justify-content: space-between;
+                                    .messageBox {
+                                        background-color: #ffffff;
+                                        position: relative;
+                                        display: block;
+                                        @include csize(100%,100%);
+                                        @include cmax-size(100%,480px);
+                                        padding: 15px;
+                                        font-size: 15px;
+                                        letter-spacing: 1px;
+                                        color: $black;
+                                        font-weight: 500;
+                                        @extend %Spline-Sans;
+                                        border: none;
+                                        border-radius: 0;
+                                        overflow: auto;
+                                        overflow-x: hidden;
+                                    }
+                                    .messageBox[contenteditable=true]:empty:before {
+                                        content: "Type message...";
+                                        color: grey;
+                                    }
+                                    button {
+                                        background-color: transparent;
+                                        position: relative;
+                                        @include csize(50px,50px);
+                                        border: none;
+                                        border-radius: 0;
+                                        cursor: pointer;
+                                        display: flex;
+                                        margin: auto auto 0 auto;
+                                        border: none;
+                                        border-left: 1px solid hsla(215, 49%, 7%, 0.1);
+                                        svg {
+                                            position: relative;
+                                            margin: auto;
+                                            @include csize(50%,50%);
+                                            * {
+                                                fill: $blue;
+                                            }
+                                        }
+                                    }
+                                }
+                                .private-alert {
+                                    @extend %Spline-Sans;
+                                    font-size: 17px;
+                                    letter-spacing: 1px;
+                                    color: hsla(217, 47%, 7%, 0.75);
+                                    font-weight: 600;
+                                    margin: auto;
+                                    display: block;
+                                    @include csize(fit-content, fit-content);
+                                }
+                            }
+                        }
+                    }
+                    .profile-unavailability {
+                        background-color: hsla(0, 0%, 100%, 0.5);
+                        position: relative;
+                        display: block;
+                        @include csize(fit-content, fit-content);
+                        top:50%;
+                        padding: 16px;
+                        text-align: center;
+                        margin: auto;
+                        @extend %Spline-Sans;
+                        font-size: 22px;
+                        font-weight: 500;
+                        line-height: 36px;
+                        color: $black;
+                        letter-spacing: 1.5px;
+                        @include translateY(-50%); 
+                        border-radius: 4px;
+                        border: 1px solid hsla(215, 49%, 7%, 0.1);
+                        @include box-shadow(1px,0px,8px,-5px,hsla(251, 20%, 17%, 0.5));
+                    }
+                }
+                .unavailable-page {
+                    background-color: hsla(2, 76%, 54%, 0.05);
+                }
+            }
+        }
+    }
+}

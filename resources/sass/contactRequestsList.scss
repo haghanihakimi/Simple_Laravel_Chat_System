@@ -1,0 +1,229 @@
+// Variables
+@import 'variables';
+@import 'mixs';
+
+html,body {
+    .m_Container {
+        .m_box {
+            .messages-panel {
+                .left-panel-viewer {
+                    @include cmax-size(fit-content,auto);
+                    .contact-requests-list-container {
+                        position: relative;
+                        @include fsize;
+                        .contacts-list {
+                            position: relative;
+                            @include fsize;
+                            overflow: auto;
+                            overflow-x: hidden;
+                            .contacts-list-tab-container {
+                                position: relative;
+                                @include csize(100%,auto);
+                                @include user-select(none);
+                                .nav {
+                                    padding: 0;
+                                    margin: auto;
+                                    li {
+                                        display: inline-block;
+                                        a {
+                                            text-decoration: none;
+                                            padding: 12px 8px 12px 8px;
+                                            display: inline-block;
+                                            @extend %Spline-Sans;
+                                            font-size: 13px;
+                                            font-weight: 500;
+                                            letter-spacing: 1px;
+                                            margin: auto;
+                                            text-align: center;
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                        .active {
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                                .contact-requests-tab-contents {
+                                    position: relative;
+                                    @include csize(100%,auto);
+                                    .wrapper {
+                                        position: relative;
+                                        display: block;
+                                        @include csize(100%,auto);
+                                        .list-container {
+                                            position: relative;
+                                            @include csize(100%,auto);
+                                            display: flex;
+                                            padding: 7px;
+                                            &:last-child {
+                                                border: none;
+                                            }
+                                            .list-holder {
+                                                text-decoration: none;
+                                                @include csize(100%,auto);
+                                                padding: 4px;
+                                                display: flex;
+                                                flex-direction: row;
+                                                gap: 12px;
+                                                border-radius: 4px;
+                                                @include easings(200ms);
+                                                &:hover {
+                                                    background-color: hsla(240, 14%, 10%, 0.025);
+                                                }
+                                                .profile-image {
+                                                    position: relative;
+                                                    @include csize(fit-content,fit-content);
+                                                    @include cmax-size(70px,70px);
+                                                    border-radius: 720px;
+                                                    padding: 2px;
+                                                    img {
+                                                        object-fit: cover;
+                                                        @include fsize;
+                                                        border-radius: 720px;
+                                                        position: relative;
+                                                    }
+                                                }
+                                                .list-item-names {
+                                                    position: relative;
+                                                    @include fsize;
+                                                    padding: 0;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: flex-start;
+                                                    gap: 0;
+                                                    align-items: center;
+                                                    span {
+                                                        @extend %Spline-Sans;
+                                                        font-size: 15px;
+                                                        font-weight: 600;
+                                                        letter-spacing: 1px;
+                                                        @include user-select(none);
+                                                        margin: auto auto auto 0;
+                                                        text-overflow: ellipsis;
+                                                        white-space: nowrap;
+                                                        overflow: hidden;
+                                                        @include csize(100%,auto);
+                                                    }
+                                                }
+                                                .list-item-controls-box {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    position: relative;
+                                                    @include fsize;
+                                                    @include cmax-size(40px,auto);
+                                                    cursor: pointer;
+                                                    button {
+                                                        background-color: transparent;
+                                                        position: relative;
+                                                        @include csize(32px,32px);
+                                                        display: flex;
+                                                        border: none;
+                                                        border-radius: 4px;
+                                                        cursor: pointer;
+                                                        @include easings(200ms);
+                                                        svg {
+                                                            position: relative;
+                                                            margin: auto;
+                                                            @include csize(60%,60%);
+                                                        }
+                                                    }
+                                                    .more-options {
+                                                        background-color: $clouds;
+                                                        position: absolute;
+                                                        right: 0;
+                                                        top: 55px;
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        gap: 0;
+                                                        @include csize(fit-content,auto);
+                                                        @include cmin-size(170px,100px);
+                                                        @include cmax-size(100%,auto);
+                                                        border-radius: 4px;
+                                                        z-index: 5;
+                                                        a {
+                                                            text-decoration: none;
+                                                            display: block;
+                                                            padding: 8px;
+                                                            @extend %Spline-Sans;
+                                                            font-size: 15px;
+                                                            letter-spacing: 1px;
+                                                            font-weight: 600;
+                                                            text-align: left;
+                                                            @include easings(200ms);                                                
+                                                            border-top-right-radius: 4px;
+                                                            border-top-left-radius: 4px;
+                                                            &:hover {
+                                                                background-color: $body-bg;
+                                                            }
+                                                        }
+                                                        form {
+                                                            display: block;
+                                                            position: relative;
+                                                            @include fsize;
+                                                            &:last-child {
+                                                                border: none;
+                                                            }
+                                                            button {
+                                                                background-color: transparent;
+                                                                @include csize(100%,36px);
+                                                                display: flex;
+                                                                justify-content: flex-start;
+                                                                align-items: center;
+                                                                border: none;
+                                                                @extend %Spline-Sans;
+                                                                font-size: 15px;
+                                                                letter-spacing: 1px;
+                                                                padding: 0 8px 0 8px;
+                                                                font-weight: 600;
+                                                                text-align: left;
+                                                                cursor: pointer;
+                                                                @include easings(200ms);
+                                                                &:first-child {
+                                                                    border-top-right-radius: 4px;
+                                                                    border-top-left-radius: 4px;
+                                                                }
+                                                                &:last-child {
+                                                                    border-bottom-right-radius: 4px;
+                                                                    border-bottom-left-radius: 4px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .contacts-loader-waiter {
+                                        @extend %Spline-Sans;
+                                        font-size: 18px;
+                                        letter-spacing: 1px;
+                                        font-weight: 700;
+                                        padding: 12px;
+                                        margin: auto;
+                                        @include csize(100%,fit-content);
+                                        display: block;
+                                        text-align: center;
+                                    }
+                                    .unavailability {
+                                        @extend %Spline-Sans;
+                                        font-size: 17px;
+                                        opacity: 0.75;
+                                        letter-spacing: 1px;
+                                        font-weight: 700;
+                                        padding: 12px;
+                                        margin: auto;
+                                        @include csize(100%,fit-content);
+                                        display: block;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
