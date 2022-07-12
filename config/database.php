@@ -139,8 +139,8 @@ return [
             'host' => env('REDIS_HOST', '127.0.0.1'),
             'password' => env('REDIS_PASSWORD', null),
             'port' => env('REDIS_PORT', '6379'),
-            'database' => env('REDIS_CACHE_DB', '1'),
-            'prefix' => 'che:',
+            'database' => env('REDIS_DB', '0'),
+            'prefix' => 'cache:',
         ],
 
         'session' => [
@@ -148,8 +148,8 @@ return [
             'host' => env('REDIS_HOST', '127.0.0.1'),
             'password' => env('REDIS_PASSWORD', null),
             'port' => env('REDIS_PORT', '6379'),
-            'database' => env('REDIS_SESSION_DB', '2'),
-            'prefix' => 'ssi:',
+            'database' => env('REDIS_DB', '0'),
+            'prefix' => 'session:',
         ],
 
         'broadcast' => [
@@ -157,8 +157,8 @@ return [
             'host' => env('REDIS_HOST', '127.0.0.1'),
             'password' => env('REDIS_PASSWORD', null),
             'port' => env('REDIS_PORT', '6379'),
-            'database' => env('REDIS_BROADCAST_DB', '3'),
-            'prefix' => 'cast:',
+            'database' => env('REDIS_DB', '0'),
+            'prefix' => 'broadcast:',
         ],
 
         'queues' => [
@@ -166,8 +166,8 @@ return [
             'host' => env('REDIS_HOST', '127.0.0.1'),
             'password' => env('REDIS_PASSWORD', null),
             'port' => env('REDIS_PORT', '6379'),
-            'database' => env('REDIS_QUEUE_DB', '4'),
-            'prefix' => 'q:',
+            'database' => env('REDIS_DB', '0'),
+            'prefix' => 'queue:',
         ],
 
     ],

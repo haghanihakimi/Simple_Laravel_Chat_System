@@ -54,45 +54,6 @@ export default {
                     commit('toggleSavings', false)
                 }) 
             })       
-        },
-        async updateNotificationSound ({commit, dispatch}, preference)
-        {
-            commit('toggleSavings', true)
-            await axios.get('/sanctum/csrf-cookie').then(() => {
-                axios.post('/api/preferences/update/notifications/sound', preference, '')
-                    .then(response => {
-                        dispatch('updateErrors', {"code": response.data.code, "title": response.data.title, "message": response.data.message, "button": 'dismiss', 'popup': (response.data.code !== 200) ? true : false},{root:true});
-                        if (response.data.code === 200) {
-                            commit('fetchPreferences', response.data)
-                        }
-                    })
-                    .catch(err => {
-                        dispatch('updateErrors', {"code": 500, "title": 'Notification Sound Failure', "message": err, "button": 'dismiss', 'popup': true},{root:true});
-                    })
-                    .finally(() => {
-                        commit('toggleSavings', false)
-                    })
-            })            
-        },
-        async updateMessageSound ({commit, dispatch}, preference)
-        {
-            commit('toggleSavings', true)
-            await axios.get('/sanctum/csrf-cookie').then(() => {
-                axios.post('/api/preferences/update/messages/sound', preference, '')
-                    .then(response => {
-                        dispatch('updateErrors', {"code": response.data.code, "title": response.data.title, "message": response.data.message, "button": 'dismiss', 'popup': (response.data.code !== 200) ? true : false},{root:true});
-                        if (response.data.code === 200) {
-                            commit('fetchPreferences', response.data)
-                        }
-                    })
-                    .catch(err => {
-                        dispatch('updateErrors', {"code": 500, "title": 'Message Sound Failure', "message": err, "button": 'dismiss', 'popup': true},{root:true});
-                    })
-                    .finally(() => {
-                        commit('toggleSavings', false)
-                    })
-            })
-            
         }
     }
   }

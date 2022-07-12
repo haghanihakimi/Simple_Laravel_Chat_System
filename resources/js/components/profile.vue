@@ -43,7 +43,7 @@
                     </div>
                     <div class="inputs-box dob-box">
                         <label for="dob">Date of Birth</label>
-                        <v-date-picker class="inline-block h-full" v-model="user_inputs.dob" :max-date="`12/31/${year}`" :is-dark="$store.getters.preferences.settings.dark_mode ? true : false">
+                        <v-date-picker class="inline-block h-full" v-model="user_inputs.dob" :max-date="`12/31/${year}`" :is-dark="$store.getters.preferences.dark_mode ? true : false">
                             <template v-slot="{ inputValue, togglePopover }">
                                 <div style="width:100% !important" class="flex items-center">
                                     <button

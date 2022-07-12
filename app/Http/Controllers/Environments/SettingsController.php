@@ -132,7 +132,7 @@ class SettingsController extends Controller
             try {
                 $settings = json_decode(Redis::get('profiles:username:'.auth()->user()->uid));
     
-                return response()->json(['code' => 200, 'title' => 'Mode changed successfully!', 'message' => 'Mode changed successfully', 'settings' => $settings]);
+                return response()->json(['code' => 200, 'title' => '', 'message' => '', 'settings' => $settings]);
             } catch (\Exception $e) {
                 return response()->json([
                     'code' => 500, 
@@ -163,54 +163,6 @@ class SettingsController extends Controller
             } catch(\Exception $e) {
                 session()->regenerate();
                 return response()->json(['code' => 500, 'title' => 'Mode changing error!', 'message' => $e->getMessage()]);
-            }
-        }
-    }
-
-    protected function updateNotificationSound (Request $request)
-    {
-        if (Auth::check()) {
-            try {
-                $settings = json_decode(Redis::get('profiles:username:'.auth()->user()->uid));
-                Redis::set('profiles:username:'.auth()->user()->uid, json_encode([
-                    "user_id" => auth()->user()->id,
-                    "dark_mode" => $settings->dark_mode,
-                    "notification_sound" => $settings->notification_sound ? 0 : 1,
-                    "message_sound" => $settings->message_sound,
-                    "created_at" => $settings->created_at,
-                    "upated_at" => now()
-                ]));
-
-                $settings = json_decode(Redis::get('profiles:username:'.auth()->user()->uid));
-                
-                return response()->json(['code' => 200, 'title' => 'Notifications Sound Changed', 'message' => 'Notifications sound changed successfully', 'settings' => $settings]);
-            } catch(\Exception $e) {
-                session()->regenerate();
-                return response()->json(['code' => $e->getStatusCode(), 'title' => 'Notification Sound Failure', 'message' => $e->getMessage()]);
-            }
-        }
-    }
-
-    protected function updateMessageSound (Request $request)
-    {
-        if (Auth::check()) {
-            try {
-                $settings = json_decode(Redis::get('profiles:username:'.auth()->user()->uid));
-                Redis::set('profiles:username:'.auth()->user()->uid, json_encode([
-                    "user_id" => auth()->user()->id,
-                    "dark_mode" => $settings->dark_mode,
-                    "notification_sound" => $settings->notification_sound,
-                    "message_sound" => $settings->message_sound ? 0 : 1,
-                    "created_at" => $settings->created_at,
-                    "upated_at" => now()
-                ]));
-    
-                $settings = json_decode(Redis::get('profiles:username:'.auth()->user()->uid));
-                
-                return response()->json(['code' => 200, 'title' => 'Messages Sound Changed', 'message' => 'Messages sound changed successfully!', 'settings' => $settings]);
-            } catch(\Exception $e) {
-                session()->regenerate();
-                return response()->json(['code' => $e->getStatusCode(), 'title' => 'Messages Sound Failure', 'message' => $e->getMessage()]);
             }
         }
     }

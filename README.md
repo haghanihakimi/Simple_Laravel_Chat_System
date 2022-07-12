@@ -37,3 +37,46 @@ The default password for user account is: **123456789**
 #### PS:
 There can be bugs and some problems in every project and this one also may have some issues too!
 There will be regular changes/updates to this project to inject my new knowledges and improvements to this project time-to-time in the future!
+
+## Configure & run the project!
+If you already have worked with Laravel and you have good experience with this Framework, then you may not have any problem with running this project.<br/>
+In any way, I will explain how to run this project step by step!<br/><br/>
+
+#### Step 1: XAMPP, Composer, NodeJS and Redis
+1. First: please make sure you already installed **[XAMPP](https://www.apachefriends.org/download.html)**, **[Composer](https://getcomposer.org/download/)** and **[NodeJS](https://nodejs.org/en/)**.<br/>
+2. Second: make sure you installed Redis on your system. Redis DB is used in this project and without **[Redis](https://github.com/microsoftarchive/redis/releases/tag/win-3.0.504)** being installed on your system, you cannot read/write data!
+    * If you don't want to install any application on your system, you can create a **[Redislab](https://app.redislabs.com/#/login)** account and follow stage 2 and stage 4!<br/>
+
+#### Step 2: Redislab account & database.php file
+If you decided not to install Redis application (given link in previous step), then the only way will be connecting entire project to your **[Redislab](https://app.redislabs.com/#/login)** account. Please create an account on Redislab. It is **free** and you don't have to install any application on your system! <br/>
+
+#### Step 3: Add ``` .env ``` file to project
+You may see a file named **.env.example**! Please copy & paste it then rename it to ```.env```. <br/>
+
+#### Step 4: Redis DB configuration
+1. Open ```.env``` file and make sure **DB_DATABASE** is equal to **tuba**. You can also change this name to whatever you want and then go to next step!<br/>
+2. In ``` .env ``` file, scroll down to Redis DB configuration section.
+3. Set ``` REDIS_HOST ``` equal to **Public endpoint** of Redis database you have on your Redis Cloud account.
+4. Set ``` REDIS_PORT ``` equal to **Port Number** you see at the end of **Public Endpoint** address
+5. Set ``` REDIS_USERNAME ``` equal to **Default User - Username** you can find under **Security** section of your Redis Cloud database.
+6. Set ``` REDIS_PASSWORD ``` equal to **Default user password** you can find under **Security** section of your Redis Cloud database.
+7. I attached an example of Redis DB configuration inside ``` .env ``` file down below. These information are just example and not the real one!
+```
+REDIS_HOST="redis-12345.c666.asia-northeast6-6.gce.cloud.redislabs.com"
+REDIS_PORT="23470"
+REDIS_USERNAME="default"
+REDIS_PASSWORD="svEs9vncba63IWp6o4PmEyOwZlPA0T0"
+```
+
+#### Step 5: Create SQL Database on PHPMyadmin
+Go go to **localhost/phpmyadmin** and create a database. Name the database **tuba** or whatever name you used for **DB_DATABASE** in previous step. <br/>
+
+#### Step 6: Dependencies & Packages installation:
+1. If you use **[VSCODE](https://code.visualstudio.com/download)** press **CTRL + J** to open terminal section.
+2. In terminal section, please run ``` php artisan migrate:fresh --seed ``` to create tables and populate data samples into tables.
+3. In terminal section, type & run ``` composer install ``` to install **Laravel COMPOSER** dependencies/packages
+4. In terminal section, type & run ``` npm install ``` to install **node_modules**. This installs all libraries/plugins/packages used in VUE JS (front-end).<br/>
+#### Step 7: Run the project!
+If you done all steps mentioned above, it's time to run this project.<br/>
+1. Type and run ``` php artisan serve ``` OR if you want to run project over **HTTPS** type and run ```php artisan serve --port=443  ```
+2. Type and run ``` npm run watch ``` to compile front-end assets such as **styles** written in SCSS and Vue JS components & files.
