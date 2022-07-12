@@ -43,7 +43,7 @@ If you already have worked with Laravel and you have good experience with this F
 In any way, I will explain how to run this project step by step!<br/><br/>
 
 #### Step 1: XAMPP, Composer, NodeJS and Redis
-1. First: please make sure you already installed **[XAMPP](https://www.apachefriends.org/download.html)**, **[Composer](https://getcomposer.org/download/)** and **[NodeJS](https://nodejs.org/en/)**.<br/>
+1. First: please make sure you already installed **[XAMPP](https://www.apachefriends.org/download.html)**, **[Composer](https://getcomposer.org/download/)** and **[NodeJS](https://nodejs.org/en/)** on your system.<br/>
 2. Second: make sure you installed Redis on your system. Redis DB is used in this project and without **[Redis](https://github.com/microsoftarchive/redis/releases/tag/win-3.0.504)** DB connection, you may face many errors and problems!
     * If you don't want to install any application on your system, you can create a **[Redislab](https://app.redislabs.com/#/login)** account and follow stage 2 and stage 4!<br/>
 
