@@ -29,8 +29,11 @@ The default password for user account is: **123456789**
 #### Basic requirements to run and test application:
 1. NPM/NodeJS
 2. PHP Composer
-3. Pusher account to have required keys
-4. MailTrap account to have reuqired keys
+3. **(Pusher)[https://pusher.com/]** account to have required keys
+4. **(MailTrap)[https://mailtrap.io/signin]** account to have reuqired keys
+5. **REDIS application** OR **(REDIS Cloud Account)[https://app.redislabs.com/#/login]**
+6. A local server on your system, such as **(WAMPServer)[https://www.wampserver.com/en/]** or **(XAMPP)[https://www.apachefriends.org/download.html]**
+
 
 #### Note: Laravel DebugBar is installed. Keep APP_DEBUG to TRUE to be able to use this tool during Development Stage.
 
@@ -47,7 +50,7 @@ In any way, I will explain how to run this project step by step!<br/><br/>
 2. Second: make sure you installed Redis on your system. Redis DB is used in this project and without **[Redis](https://github.com/microsoftarchive/redis/releases/tag/win-3.0.504)** DB connection, you may face many errors and problems!
     * If you don't want to install any application on your system, you can create a **[Redislab](https://app.redislabs.com/#/login)** account and follow stage 2 and stage 4!<br/>
 
-#### Step 2: Redislab account & database.php file
+#### Step 2: REDIS Cloud Account & database.php file
 If you decided not to install Redis application (given link in previous step), then the only way will be connecting entire project to your **[Redislab](https://app.redislabs.com/#/login)** account. Please create an account on Redislab. It is **free** and you don't have to install any application on your system! <br/>
 
 #### Step 3: Add ``` .env ``` file to project
