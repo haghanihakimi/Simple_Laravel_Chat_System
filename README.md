@@ -48,10 +48,10 @@ In any way, I will explain how to run this project step by step!<br/><br/>
 #### Step 1: XAMPP, Composer, NodeJS and Redis
 1. First: please make sure you already installed **[XAMPP](https://www.apachefriends.org/download.html)**, **[Composer](https://getcomposer.org/download/)** and **[NodeJS](https://nodejs.org/en/)** on your system.<br/>
 2. Second: make sure you installed Redis on your system. Redis DB is used in this project and without **[Redis](https://github.com/microsoftarchive/redis/releases/tag/win-3.0.504)** DB connection, you may face many errors and problems!
-    * If you don't want to install any application on your system, you can create a **[Redislab](https://app.redislabs.com/#/login)** account and follow stage 2 and stage 4!<br/>
+    * If you don't want to install any application on your system, you can create a **[Redis Cloud Account](https://app.redislabs.com/#/login)** and follow stage 2 and stage 4!<br/>
 
 #### Step 2: REDIS Cloud Account & database.php file
-If you decided not to install Redis application (given link in previous step), then the only way will be connecting entire project to your **[Redislab](https://app.redislabs.com/#/login)** account. Please create an account on Redislab. It is **free** and you don't have to install any application on your system! <br/>
+If you decided not to install Redis application (given link in previous step), then the only way will be connecting entire project to your **[Redis Cloud Account](https://app.redislabs.com/#/login)**. Please create an account on Redislab. It is **free** and you don't have to install any application on your system! <br/>
 
 #### Step 3: Add ``` .env ``` file to project
 You may see a file named **.env.example**! Please copy & paste it then rename it to ```.env```. <br/>
