@@ -29,10 +29,10 @@ The default password for user account is: **123456789**
 #### Basic requirements to run and test application:
 1. NPM/NodeJS
 2. PHP Composer
-3. **(Pusher)[https://pusher.com/]** account to have required keys
-4. **(MailTrap)[https://mailtrap.io/signin]** account to have reuqired keys
-5. **REDIS application** OR **(REDIS Cloud Account)[https://app.redislabs.com/#/login]**
-6. A local server on your system, such as **(WAMPServer)[https://www.wampserver.com/en/]** or **(XAMPP)[https://www.apachefriends.org/download.html]**
+3. **[Pusher](https://pusher.com/)** account to have required keys
+4. **[MailTrap](https://mailtrap.io/signin)** account to have reuqired keys
+5. **REDIS application** OR **[REDIS Cloud Account](https://app.redislabs.com/#/login)**
+6. A local server on your system, such as **[WAMPServer](https://www.wampserver.com/en/)** or **[XAMPP](https://www.apachefriends.org/download.html)**
 
 
 #### Note: Laravel DebugBar is installed. Keep APP_DEBUG to TRUE to be able to use this tool during Development Stage.
